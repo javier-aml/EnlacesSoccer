@@ -1,0 +1,351 @@
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\RutaArchivos.settings
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Data.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Drawing.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Web.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Web.Services.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Xml.dll
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+D:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\RutaArchivos.settings
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Data.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Drawing.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Web.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Web.Services.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\System.Xml.dll
+\\dcs-aarodriguez\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+\\dcs-aarodriguez\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\RutaArchivos.settings
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Data.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Drawing.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Web.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Web.Services.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\System.Xml.dll
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+C:\Arturo\Personal\PROYECTOS DE SISTEMAS\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\RutaArchivos.settings
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Data.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Drawing.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Web.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Web.Services.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\System.Xml.dll
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraTorneo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmModificaTorneo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+C:\Arturo\ARA Sistemas\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\RutaArchivos.settings
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Data.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Drawing.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Web.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Web.Services.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\System.Xml.dll
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraTorneo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmModificaTorneo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+C:\Arturo\ARA. Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\Resources\DEACERO+VERDE mini.jpg
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\RutaArchivos.Designer.vb
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\RutaArchivos.settings
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.exe.config
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.exe
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\TorneoDeacero.xml
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.Common.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Data.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Drawing.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Web.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Web.Services.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Windows.Forms.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\System.Xml.dll
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\ResolveAssemblyReference.cache
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmBase.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguraTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmModificaTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.Resources.resources
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.exe
+C:\Arturo\ARA Servicios de Ti\Torneo DEACERO\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\Resources\DEACERO+VERDE mini.jpg
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\RutaArchivos.Designer.vb
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\RutaArchivos.settings
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\TorneoDeacero.exe.config
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\TorneoDeacero.exe
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\TorneoDeacero.xml
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\Microsoft.ReportViewer.Common.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Data.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Drawing.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Web.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Web.Services.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Windows.Forms.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\System.Xml.dll
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\bin\Microsoft.ReportViewer.WinForms.xml
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmAcceso.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.frmAltaEquipo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmArbitros.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmAsignarSancion.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.frmBase.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmCapturaObservaciones.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmCapturaResultado.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmConfiguraciones.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmConfiguraTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.frmConsultarEquipo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmConsultaResultado.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmEstadisticaJugador.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmEstadisticaSanciones.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmGeneraTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmJuntas.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmModificaTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmNuevaJunta.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmNuevoArbitro.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmNuevoConfiguracion.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmNuevoTipoSancion.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmRelEquipoJugador.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmReportViewerSSRS.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmTiposSancion.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmVerTorneo.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmJugadores.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmConfiguracionBD.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmLicencia.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmNuevoJugador.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmPassword.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.FrmPrincipal.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.Resources.resources
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.vbproj.GenerateResource.Cache
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.exe
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.xml
+C:\Arturo\ARA Servicios de Ti\Plataforma Enlaces\EnlacesSoccer\EnlacesSoccerApp\Código\obj\Release\TorneoDeacero.vbprojResolveAssemblyReference.cache

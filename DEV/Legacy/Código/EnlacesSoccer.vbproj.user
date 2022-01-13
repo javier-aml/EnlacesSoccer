@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <LastOpenVersion>7.10.3077</LastOpenVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ReferencePath>C:\Program Files (x86)\Business Objects\Common\2.8\managed\c:\Program Files\Common Files\Business Objects\2.7\Managed\C:\PROYECTOS DE SISTEMAS\CLINICAS VETERINARIAS\SISCOVET 1.0\bin\;C:\DESARROLLO VS NET 2003\VB\Clase Encriptar\bin\;C:\DESARROLLO VS NET 2003\VB\Clase Seguridad\bin\;C:\PROYECTOS DE SISTEMAS\LIBRERIAS\ClsConexion\bin\;C:\PROYECTOS DE SISTEMAS\LIBRERIAS\ClsEstado\bin\;C:\DESARROLLO VS NET 2003\VB\Amortizacion\bin\;D:\CLINICAS VETERINARIAS\SISCOVET 1.0\bin\</ReferencePath>
+    <CopyProjectDestinationFolder>
+    </CopyProjectDestinationFolder>
+    <CopyProjectUncPath>
+    </CopyProjectUncPath>
+    <CopyProjectOption>0</CopyProjectOption>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectTrust>0</ProjectTrust>
+    <PublishUrlHistory>publish\|http://localhost/Sistema Jesas/|http://localhost/jesas/|http://localhost/SISCOVET/</PublishUrlHistory>
+    <InstallUrlHistory>
+    </InstallUrlHistory>
+    <SupportUrlHistory>
+    </SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>
+    </BootstrapperUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugMachine>
+    </RemoteDebugMachine>
+    <StartAction>Project</StartAction>
+    <StartArguments>
+    </StartArguments>
+    <StartPage>
+    </StartPage>
+    <StartProgram>
+    </StartProgram>
+    <StartURL>
+    </StartURL>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartWithIE>false</StartWithIE>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <EnableASPDebugging>false</EnableASPDebugging>
+    <EnableASPXDebugging>false</EnableASPXDebugging>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+    <EnableSQLServerDebugging>false</EnableSQLServerDebugging>
+    <RemoteDebugEnabled>false</RemoteDebugEnabled>
+    <RemoteDebugMachine>
+    </RemoteDebugMachine>
+    <StartAction>Project</StartAction>
+    <StartArguments>
+    </StartArguments>
+    <StartPage>
+    </StartPage>
+    <StartProgram>
+    </StartProgram>
+    <StartURL>
+    </StartURL>
+    <StartWorkingDirectory>
+    </StartWorkingDirectory>
+    <StartWithIE>false</StartWithIE>
+  </PropertyGroup>
+</Project>

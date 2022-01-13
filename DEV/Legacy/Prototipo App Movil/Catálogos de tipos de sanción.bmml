@@ -1,0 +1,40 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="429" measuredH="530" mockupW="369" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="60" y="20" w="369" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="131" y="225" w="226" h="224" measuredW="365" measuredH="166" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Clave%2C%20Descripci%F3n%2C%20Juegos%2C%20Baja%2C%20Activo%0AJu-Imm%2C%20Intimidar%20con%20manipulaci%F3n%20de%20Medios%2C%200%2C%20%5Bx%5D%2C%20%5Bx%5D%0AJu-Aga%2C%20Por%20agredir%20a%20un%20compa%F1ero%2C%200%2C%20%5Bx%5D%2C%20%5Bx%5D%0AJu-Pac%2C%20Por%20agredir%20a%20un%20%E1rbitro%2C%200%2C%20%5Bx%5D%2C%20%5Bx%5D%0AJu-Afc%2C%20Por%20agredir%20f%EDsicamente%20a%20un%20contrario%20conducta%20violenta%2C%202%2C%20%5B%5D%2C%20%5Bx%5D%0AJu-Gop%2C%20Por%20golpear%20a%20alguien%20de%20la%20porra%20contraria%2C%200%2C%20%5Bx%5D%2C%20%5Bx%5D%0A%7B20L%2C%2053L%2C%2020C%2C%2015C%2C%2015C%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="138" y="127" w="46" h="-1" measuredW="22" measuredH="18" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Liga%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::ComboBox" x="193" y="126" w="158" h="-1" measuredW="110" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Kalcho%20San%20roque</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Label" x="138" y="207" w="86" h="-1" measuredW="79" measuredH="18" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Tipos%20de%20sanci%F3n%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::TextInput" x="193" y="160" w="158" h="-1" measuredW="79" measuredH="26" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Label" x="138" y="164" w="55" h="-1" measuredW="55" measuredH="18" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Descripci%F3n%3A</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

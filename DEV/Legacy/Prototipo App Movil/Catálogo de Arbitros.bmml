@@ -1,0 +1,29 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="429" measuredH="530" mockupW="369" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="60" y="20" w="369" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="127" y="190" w="231" h="256" measuredW="147" measuredH="166" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>8</size>
+        <text>Nombre%2C%20Activo%0AGerman%20arredondo%20ramirez%2C%20%5Bx%5D%0AArmando%20Archundia%2C%20%5Bx%5D%0AFelipe%20Ramos%20Rizo%2C%20%5Bx%5D%0ARoberto%20Garcia%20Orozco%2C%20%5B%5D%0AMarco%20Antonio%20Rodr%EDguez%2C%20%5B%5D%0A%7B60L%2C%2015C%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="138" y="127" w="46" h="-1" measuredW="22" measuredH="18" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Liga%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="125" w="167" h="-1" measuredW="110" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Kalcho%20San%20roque</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Link" x="314" y="168" w="-1" h="-1" measuredW="37" measuredH="16" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Agregar</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

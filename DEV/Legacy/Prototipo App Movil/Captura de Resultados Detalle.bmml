@@ -1,0 +1,59 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="429" measuredH="530" mockupW="369" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="60" y="20" w="369" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="138" y="197" w="46" h="-1" measuredW="33" measuredH="18" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Equipo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="131" y="222" w="227" h="224" measuredW="279" measuredH="168" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Jugador%2C%20G%2C%20TA%2C%20TR%2C%20A%0AAlberto%20Lopez%20Rocha%2C%202%2C%20%5Bx%5D%2C%20%5B%5D%2C%20%5Bx%5D%0AArturo%20Rodriguez%20Abud%2C%201%2C%20%5Bx%5D%2C%20%5B%5D%2C%20%5Bx%5D%0AJose%20Amador%20Hernandez%20Segura%2C%201%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%0ADavid%20Estrada%20Rodriguez%2C%200%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%0AJuan%20Carlos%20Hdz%20Avila%2C%201%2C%20%5B%5D%2C%20%5B%5D%2C%20%5Bx%5D%0A%7B50L%2C%2010C%2C%2010C%2C%2010C%2C%2010C%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::TextInput" x="189" y="198" w="168" h="-1" measuredW="55" measuredH="24" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Acereros</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="138" y="147" w="46" h="-1" measuredW="34" measuredH="18" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Torneo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="149" w="167" h="-1" measuredW="138" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Empresarial%202019-2020</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="138" y="174" w="55" h="-1" measuredW="40" measuredH="18" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Jornada%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="174" w="167" h="-1" measuredW="77" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Jornada%208</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="138" y="125" w="46" h="-1" measuredW="22" measuredH="18" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Liga%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="123" w="167" h="-1" measuredW="110" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Kalcho%20San%20roque</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

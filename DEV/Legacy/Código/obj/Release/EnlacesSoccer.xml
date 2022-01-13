@@ -1,0 +1,514 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EnlacesSoccer
+</name>
+</assembly>
+<members>
+<member name="M:EnlacesSoccer.FrmJuntas.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.dtJugadores">
+	<summary>
+ Lista en la uqe tendre los jugadores disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarLista">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:EnlacesSoccer.DsInforme.EmpresaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraGrandTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.ProveedorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorVencidoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPorVencerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPagadoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.MovimientosIMSSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.FacturasClientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.VehiculosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.RentaTractorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.EmpresaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraGrandTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.ProveedorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorVencidoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPorVencerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPagadoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.MovimientosIMSSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.FacturasClientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.VehiculosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.RentaTractorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.EmpresaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.OrdenCompraDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.SolicitudCotizacionDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.GastosObraGrandTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.ProveedorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorVencidoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPorVencerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.PagosProveedorPagadoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.MovimientosIMSSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.FacturasClientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.VehiculosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme.RentaTractorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:EnlacesSoccer.DsInforme">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:EnlacesSoccer.ClsTorneo.cargarTorneoActivo">
+	<summary>
+ Metodo que utlizo para cargar el torneo activo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.ClsTorneo.RegistrarTorneo">
+	<summary>
+ Metodo que utlizo para guardar el torneo creado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.ClsTorneo.cargarTorneosActivos">
+	<summary>
+ Metodo que utlizo para cargar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.ClsTorneo.cargarJornadas(System.Int32,System.Int32)">
+	<summary>
+ Metodo que utlizo para cargar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaSanciones.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmEstadisticaSanciones.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.ClsEquipo.vIdEquipo">
+	<summary>
+ Clase para el manejo de los equipos
+ </summary>
+	<remarks> ||| 29-08-2011 | Jorge Alberto Sanchez |||</remarks>
+</member><member name="M:EnlacesSoccer.FrmConsultaResultado.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmConsultaResultado.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmRelEquipoJugador.dtJugadores">
+	<summary>
+ Lista en la uqe tendre los jugadores disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmRelEquipoJugador.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmRelEquipoJugador.tieneCambios">
+	<summary>
+ Variable que uso para ver si se hizo algun movimiento.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.ToolStripButton1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Evento que llama al catalogo de jugadores, para que el usuario registre, en caso de que no exista algun jugador.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Agrega los jugadores seleccionados al equipo.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ quita los jugadores seleccionados del equipo y los deja como ajentes libres para el torneo en cuestion.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.FrmRelEquipoJugador_Load(System.Object,System.EventArgs)">
+	<summary>
+ Evento que se dispara al cargar la forma
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.llenarGrids">
+	<summary>
+ Metodo que uso para obtener los jugadores disponibles y mostrarlos en su respectivo grid.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.llenarEquipos">
+	<summary>
+ metodo para llenar los equipos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.llenarJugadoresDisponibles">
+	<summary>
+ metodo que utilizo para llenar los jugadores que aun estan disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmRelEquipoJugador.llenarJugadoresEquipo">
+	<summary>
+ metodo que de la tabla de jugadores selecciona los que ya pertenecen a este equipo para este torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmCapturaResultado.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmCapturaResultado.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmCapturaResultado.llenarPartidosPorJornada">
+	<summary>
+ Metodo que uso para llenar los partidos de la jornada y torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmCapturaResultado.llenarArbitros">
+	<summary>
+ Metodo que uso para llenar los arbitros.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.Add24X24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.database_save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.edit1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fifa_ball">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.first">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo5">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.football_player">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.images">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAFAFLUX">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCALILNBH">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAPP5F7B">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.last">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteReglamento">
+	<summary>
+  Looks up a localized string similar to Reglamento del Torneo.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteSanciones">
+	<summary>
+  Looks up a localized string similar to Reporte de sanciones.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.print16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.RutaArchivos">
+	<summary>
+  Looks up a localized string similar to C:\EnlacesSoccer\Bin.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_red">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:EnlacesSoccer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:EnlacesSoccer.FrmVerTorneo.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarPartidosPorJornada">
+	<summary>
+ metodo para llenar los equipos activos.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

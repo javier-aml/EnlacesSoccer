@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="C:\Program Files (x86)\InstallShield\2019\Support\0409\buildreport.xsl"?>
+<BuildReport ProductName="Futbol DEACERO" ProductVersion="1.0.0" Built="1-18-2020 10-52-25 p. m." Config="Product Configuration 1" Media="Release 1" Uncompressed="0.00 MB">
+  <Features>
+    <Feature Title="DefaultFeature">DefaultFeature</Feature>
+  </Features>
+  <Components>
+    <Component x64="32" KeyPath="_07D3F45760BD4F54BD16421F13A46AF8">C__07D3F45760BD4F54BD16421F13A46AF8</Component>
+    <Component x64="32" KeyPath="_0BB82573B349450BA6F035CC509CD212">C__0BB82573B349450BA6F035CC509CD212</Component>
+    <Component x64="32" KeyPath="_106E286A95A6496BAA9826E86E961446">C__106E286A95A6496BAA9826E86E961446</Component>
+    <Component x64="32" KeyPath="_1C5E1B16E91F4B288AB342D13154B031">C__1C5E1B16E91F4B288AB342D13154B031</Component>
+    <Component x64="32" KeyPath="_394B079B3AF04A0484BCCAD3029A9AF3">C__394B079B3AF04A0484BCCAD3029A9AF3</Component>
+    <Component x64="32" KeyPath="_BC00E03385034AA9A776FD7A51995F0D">C__BC00E03385034AA9A776FD7A51995F0D</Component>
+    <Component x64="32" KeyPath="_BD9DF495DA3E435FA56493430F62FFC9">C__BD9DF495DA3E435FA56493430F62FFC9</Component>
+    <Component x64="32" KeyPath="_E26E2C9D03AA4D7398CDD8FDDB79669F">C__E26E2C9D03AA4D7398CDD8FDDB79669F</Component>
+  </Components>
+  <Prerequisites>
+    <Prerequisite>Microsoft .NET Framework 3.5 SP1</Prerequisite>
+    <Prerequisite>Windows Installer 3.1 for Windows XP (x64)</Prerequisite>
+    <Prerequisite>Windows Installer 3.1 for Windows Server 2003 SP1 (x86)</Prerequisite>
+    <Prerequisite>Windows Installer 3.1 for Windows Server 2003 SP1 (x64)</Prerequisite>
+    <Prerequisite>Windows Installer 3.1 for Windows Server 2003 SP1 (IA64)</Prerequisite>
+    <Prerequisite>Windows Installer 3.1 (x86)</Prerequisite>
+  </Prerequisites>
+  <MergeModules />
+  <DynamicLinks />
+  <Files>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__E26E2C9D03AA4D7398CDD8FDDB79669F" Modified="10/04/2018 02:34:00 p. m." Size="839680" Version="2.0.50727.8922">System.Web.Services.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__BD9DF495DA3E435FA56493430F62FFC9" Modified="19/09/2011 09:22:20 p. m." Size="112862" Version="">soccer-ball.ico</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__BC00E03385034AA9A776FD7A51995F0D" Modified="05/03/2018 09:07:00 a. m." Size="2975744" Version="2.0.50727.8922">System.Data.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__394B079B3AF04A0484BCCAD3029A9AF3" Modified="10/04/2018 02:34:00 p. m." Size="5025792" Version="2.0.50727.8922">System.Windows.Forms.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__1C5E1B16E91F4B288AB342D13154B031" Modified="10/04/2018 02:34:00 p. m." Size="630784" Version="2.0.50727.8922">System.Drawing.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__106E286A95A6496BAA9826E86E961446" Modified="07/01/2019 09:06:24 p. m." Size="3207168" Version="2.0.50727.8939">System.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__0BB82573B349450BA6F035CC509CD212" Modified="10/04/2018 02:34:00 p. m." Size="2056192" Version="2.0.50727.8922">System.XML.dll</File>
+    <File Destination="{INSTALLDIR} [ProgramFilesFolder]CTIC\Futbol DEACERO" Component="C__07D3F45760BD4F54BD16421F13A46AF8" Modified="05/03/2018 09:07:00 a. m." Size="5287936" Version="2.0.50727.8922">System.Web.dll</File>
+  </Files>
+</BuildReport>

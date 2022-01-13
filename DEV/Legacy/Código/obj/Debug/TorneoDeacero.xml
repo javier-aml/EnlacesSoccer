@@ -1,0 +1,514 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TorneoDeacero
+</name>
+</assembly>
+<members>
+<member name="M:TorneoDeacero.FrmJuntas.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmEstadisticaJugador.dtJugadores">
+	<summary>
+ Lista en la uqe tendre los jugadores disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmEstadisticaJugador.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmNuevaJunta.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmNuevaJunta.llenarLista">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:TorneoDeacero.DsInforme.EmpresaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraGrandTotalDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.ProveedorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorDetalleDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorVencidoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPorVencerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPagadoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.MovimientosIMSSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.FacturasClientesDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.VehiculosDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.RentaTractorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.EmpresaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraGrandTotalRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.ProveedorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorDetalleRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorVencidoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPorVencerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPagadoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.MovimientosIMSSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.FacturasClientesRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.VehiculosRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.RentaTractorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.EmpresaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.OrdenCompraDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.SolicitudCotizacionDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.GastosObraGrandTotalRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.ProveedorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorDetalleRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorVencidoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPorVencerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.PagosProveedorPagadoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.MovimientosIMSSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.FacturasClientesRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.VehiculosRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme.RentaTractorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:TorneoDeacero.DsInforme">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="M:TorneoDeacero.ClsTorneo.cargarTorneoActivo">
+	<summary>
+ Metodo que utlizo para cargar el torneo activo
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.ClsTorneo.RegistrarTorneo">
+	<summary>
+ Metodo que utlizo para guardar el torneo creado
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.ClsTorneo.cargarTorneosActivos">
+	<summary>
+ Metodo que utlizo para cargar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.ClsTorneo.cargarJornadas(System.Int32,System.Int32)">
+	<summary>
+ Metodo que utlizo para cargar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmEstadisticaSanciones.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmEstadisticaSanciones.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.ClsEquipo.vIdEquipo">
+	<summary>
+ Clase para el manejo de los equipos
+ </summary>
+	<remarks> ||| 29-08-2011 | Jorge Alberto Sanchez |||</remarks>
+</member><member name="M:TorneoDeacero.FrmConsultaResultado.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmConsultaResultado.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmRelEquipoJugador.dtJugadores">
+	<summary>
+ Lista en la uqe tendre los jugadores disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmRelEquipoJugador.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:TorneoDeacero.FrmRelEquipoJugador.tieneCambios">
+	<summary>
+ Variable que uso para ver si se hizo algun movimiento.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.ToolStripButton1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Evento que llama al catalogo de jugadores, para que el usuario registre, en caso de que no exista algun jugador.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.Button1_Click(System.Object,System.EventArgs)">
+	<summary>
+ Agrega los jugadores seleccionados al equipo.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.Button2_Click(System.Object,System.EventArgs)">
+	<summary>
+ quita los jugadores seleccionados del equipo y los deja como ajentes libres para el torneo en cuestion.
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.FrmRelEquipoJugador_Load(System.Object,System.EventArgs)">
+	<summary>
+ Evento que se dispara al cargar la forma
+ </summary>
+	<param name="sender"></param>
+	<param name="e"></param>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.llenarGrids">
+	<summary>
+ Metodo que uso para obtener los jugadores disponibles y mostrarlos en su respectivo grid.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.llenarEquipos">
+	<summary>
+ metodo para llenar los equipos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.llenarJugadoresDisponibles">
+	<summary>
+ metodo que utilizo para llenar los jugadores que aun estan disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmRelEquipoJugador.llenarJugadoresEquipo">
+	<summary>
+ metodo que de la tabla de jugadores selecciona los que ya pertenecen a este equipo para este torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmCapturaResultado.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmCapturaResultado.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmCapturaResultado.llenarPartidosPorJornada">
+	<summary>
+ Metodo que uso para llenar los partidos de la jornada y torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmCapturaResultado.llenarArbitros">
+	<summary>
+ Metodo que uso para llenar los arbitros.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.Add24X24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.database_save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.edit1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fifa_ball">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.first">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fondo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fondo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fondo3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fondo4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.fondo5">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.football_player">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.images">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.imagesCAFAFLUX">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.imagesCALILNBH">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.imagesCAPP5F7B">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.last">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.LOGO">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.LOGO1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.LOGo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.LOGO3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.PantallaReporteReglamento">
+	<summary>
+  Looks up a localized string similar to Reglamento del Torneo.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.PantallaReporteSanciones">
+	<summary>
+  Looks up a localized string similar to Reporte de sanciones.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.print16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.RutaArchivos">
+	<summary>
+  Looks up a localized string similar to C:\TorneoDeacero\Bin.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.soccer_card_red">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:TorneoDeacero.My.Resources.Resources.soccer_card_yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:TorneoDeacero.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:TorneoDeacero.FrmVerTorneo.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmVerTorneo.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmVerTorneo.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:TorneoDeacero.FrmVerTorneo.llenarPartidosPorJornada">
+	<summary>
+ metodo para llenar los equipos activos.
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

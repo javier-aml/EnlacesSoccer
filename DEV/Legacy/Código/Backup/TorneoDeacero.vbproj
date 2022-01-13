@@ -1,0 +1,583 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4D94D8C-4025-4FAB-B133-132FD56D2978}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>Resources\soccer-ball.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>TorneoDeacero</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyMode>None</AssemblyOriginatorKeyMode>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionStrict>Off</OptionStrict>
+    <RootNamespace>TorneoDeacero</RootNamespace>
+    <StartupObject>Sub Main</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TorneoDeacero.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>full</DebugType>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>TorneoDeacero.xml</DocumentationFile>
+    <BaseAddress>285212672</BaseAddress>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>
+    </DefineConstants>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>1</WarningLevel>
+    <NoWarn>42016,42017,42018,42019,42032</NoWarn>
+    <DebugType>none</DebugType>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Name>System.Web.Services</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CalendarColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClsArbitros.vb" />
+    <Compile Include="ClsConexion.vb" />
+    <Compile Include="ClsConfiguracion.vb" />
+    <Compile Include="ClsEnumerados.vb" />
+    <Compile Include="ClsEstadisticaSanciones.vb" />
+    <Compile Include="ClsJugador.vb" />
+    <Compile Include="ClsJunta.vb" />
+    <Compile Include="ClsAcceso.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsAccion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsControl.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsEmpresa.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsEstado.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsOpcion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClsSancion.vb" />
+    <Compile Include="ClsSeguridad.vb" />
+    <Compile Include="ClsTipoSancion.vb" />
+    <Compile Include="ClsTorneo.vb" />
+    <Compile Include="ClsUsuario.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBTools.vb" />
+    <Compile Include="ClsEquipo.vb" />
+    <Compile Include="FrmAcceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAltaEquipo.Designer.vb">
+      <DependentUpon>frmAltaEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAltaEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArbitros.Designer.vb">
+      <DependentUpon>FrmArbitros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArbitros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAsignarSancion.designer.vb">
+      <DependentUpon>FrmAsignarSancion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAsignarSancion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBase.Designer.vb">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapturaObservaciones.Designer.vb">
+      <DependentUpon>FrmCapturaObservaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCapturaObservaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCapturaResultado.Designer.vb">
+      <DependentUpon>FrmCapturaResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCapturaResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguraciones.Designer.vb">
+      <DependentUpon>FrmConfiguraciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguraciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguraTorneo.Designer.vb">
+      <DependentUpon>FrmConfiguraTorneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConfiguraTorneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarEquipo.Designer.vb">
+      <DependentUpon>frmConsultarEquipo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarEquipo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConsultaResultado.Designer.vb">
+      <DependentUpon>FrmConsultaResultado.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConsultaResultado.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticaJugador.Designer.vb">
+      <DependentUpon>FrmEstadisticaJugador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticaJugador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEstadisticaSanciones.Designer.vb">
+      <DependentUpon>FrmEstadisticaSanciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEstadisticaSanciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGeneraTorneo.Designer.vb">
+      <DependentUpon>FrmGeneraTorneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeneraTorneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmJuntas.Designer.vb">
+      <DependentUpon>FrmJuntas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJuntas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmModificaTorneo.Designer.vb">
+      <DependentUpon>FrmModificaTorneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmModificaTorneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevaJunta.Designer.vb">
+      <DependentUpon>FrmNuevaJunta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevaJunta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoArbitro.Designer.vb">
+      <DependentUpon>FrmNuevoArbitro.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoArbitro.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoConfiguracion.Designer.vb">
+      <DependentUpon>FrmNuevoConfiguracion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoConfiguracion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoTipoSancion.Designer.vb">
+      <DependentUpon>FrmNuevoTipoSancion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNuevoTipoSancion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRelEquipoJugador.Designer.vb">
+      <DependentUpon>FrmRelEquipoJugador.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRelEquipoJugador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportViewerSSRS.Designer.vb">
+      <DependentUpon>FrmReportViewerSSRS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportViewerSSRS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTiposSancion.Designer.vb">
+      <DependentUpon>FrmTiposSancion.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTiposSancion.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmVerTorneo.Designer.vb">
+      <DependentUpon>FrmVerTorneo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmVerTorneo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HourColumn.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DsInforme.designer.vb">
+      <DependentUpon>DsInforme.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="DsInforme.vb">
+      <DependentUpon>DsInforme.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmJugadores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConfiguracionBD.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLicencia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNuevoJugador.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jornada.vb" />
+    <Compile Include="JornadaPartido.vb" />
+    <Compile Include="jornadaPartidoJugador.vb" />
+    <Compile Include="ModGeneral.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModuloConfiguracion.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModuloInicio.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModuloLicencia.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ModuloUtilerias.vb">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RutaArchivos.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>RutaArchivos.settings</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RutaArchivos.vb" />
+    <Compile Include="torneoEquipo.vb" />
+    <Compile Include="torneoEquipoJugador.vb" />
+    <Content Include="bin\TorneoDeacero.exe" />
+    <Content Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </Content>
+    <Content Include="OOFL.ICO" />
+    <Content Include="Resources\database_save.png" />
+    <None Include="Resources\database_save1.png" />
+    <Content Include="Resources\DEACERO+VERDE mini.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\fifa-ball.jpg" />
+    <Content Include="Resources\first.png" />
+    <None Include="Resources\first1.png" />
+    <None Include="Resources\football_player.jpg" />
+    <None Include="Resources\fondo.png" />
+    <None Include="Resources\fondo2.png" />
+    <None Include="Resources\fondo3.png" />
+    <None Include="Resources\fondo4.png" />
+    <None Include="Resources\fondo5.png" />
+    <None Include="Resources\images.jpeg" />
+    <Content Include="Resources\last.png" />
+    <None Include="Resources\print16.ico" />
+    <Content Include="Resources\soccer-ball.ico" />
+    <Content Include="Resources\soccer-card-red.ico" />
+    <Content Include="Resources\soccer-card-yellow.ico" />
+    <Content Include="Resources\soccer-goal.ico" />
+    <None Include="Resources\LOGO3.jpg" />
+    <None Include="Resources\LOGo2.jpg" />
+    <None Include="Resources\LOGO1.jpg" />
+    <None Include="Resources\LOGO.jpg" />
+    <None Include="Resources\last1.png" />
+    <None Include="Resources\imagesCAFAFLUX.jpg" />
+    <None Include="Resources\imagesCAPP5F7B.jpg" />
+    <None Include="Resources\imagesCALILNBH.jpg" />
+    <EmbeddedResource Include="FrmAcceso.resx">
+      <DependentUpon>FrmAcceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAltaEquipo.resx">
+      <DependentUpon>frmAltaEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArbitros.resx">
+      <DependentUpon>FrmArbitros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAsignarSancion.resx">
+      <DependentUpon>FrmAsignarSancion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBase.resx">
+      <DependentUpon>frmBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCapturaObservaciones.resx">
+      <DependentUpon>FrmCapturaObservaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCapturaResultado.resx">
+      <DependentUpon>FrmCapturaResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguraciones.resx">
+      <DependentUpon>FrmConfiguraciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguraTorneo.resx">
+      <DependentUpon>FrmConfiguraTorneo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarEquipo.resx">
+      <DependentUpon>frmConsultarEquipo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConsultaResultado.resx">
+      <DependentUpon>FrmConsultaResultado.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticaJugador.resx">
+      <DependentUpon>FrmEstadisticaJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEstadisticaSanciones.resx">
+      <DependentUpon>FrmEstadisticaSanciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGeneraTorneo.resx">
+      <DependentUpon>FrmGeneraTorneo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJuntas.resx">
+      <DependentUpon>FrmJuntas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmModificaTorneo.resx">
+      <DependentUpon>FrmModificaTorneo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevaJunta.resx">
+      <DependentUpon>FrmNuevaJunta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoArbitro.resx">
+      <DependentUpon>FrmNuevoArbitro.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoConfiguracion.resx">
+      <DependentUpon>FrmNuevoConfiguracion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoTipoSancion.resx">
+      <DependentUpon>FrmNuevoTipoSancion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRelEquipoJugador.resx">
+      <DependentUpon>FrmRelEquipoJugador.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportViewerSSRS.resx">
+      <DependentUpon>FrmReportViewerSSRS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTiposSancion.resx">
+      <DependentUpon>FrmTiposSancion.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmVerTorneo.resx">
+      <DependentUpon>FrmVerTorneo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmJugadores.resx">
+      <DependentUpon>FrmJugadores.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConfiguracionBD.resx">
+      <DependentUpon>FrmConfiguracionBD.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLicencia.resx">
+      <DependentUpon>FrmLicencia.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNuevoJugador.resx">
+      <DependentUpon>FrmNuevoJugador.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassword.resx">
+      <DependentUpon>FrmPassword.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrincipal.resx">
+      <DependentUpon>FrmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="bin\TorneoDeacero.exe.config" />
+    <None Include="DsInforme.xsc">
+      <DependentUpon>DsInforme.xsd</DependentUpon>
+    </None>
+    <None Include="DsInforme.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsInforme.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DsInforme.xss">
+      <DependentUpon>DsInforme.xsd</DependentUpon>
+    </None>
+    <None Include="DsInforme.xsx">
+      <DependentUpon>DsInforme.xsd</DependentUpon>
+    </None>
+    <None Include="RutaArchivos.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>RutaArchivos.Designer.vb</LastGenOutput>
+      <SubType>
+      </SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

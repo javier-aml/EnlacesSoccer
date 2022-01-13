@@ -1,0 +1,41 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="429" measuredH="530" mockupW="369" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="60" y="20" w="369" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="138" y="155" w="46" h="-1" measuredW="34" measuredH="18" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Torneo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="153" w="167" h="-1" measuredW="115" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Dominical%20Matutino</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::DataGrid" x="132" y="196" w="219" h="242" measuredW="167" measuredH="168" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Nombre%2C%20Activo%2C%20Jugadores%0AKeyense%2C%20%5Bx%5D%2C%20%5BAgregar%5D%0AAcereros%2C%20%5Bx%5D%2C%20%5BAgregar%5D%0ATowa%2C%20%5Bx%5D%2C%20%5BAgregar%5D%0ADryCleaner%2C%20%5Bx%5D%2C%20%5BAgregar%5D%0AAutozone%2C%20%5Bx%5D%2C%20%5BAgregar%5D%0A%7B50L%2C%2015C%2C%2025C%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="138" y="127" w="46" h="-1" measuredW="22" measuredH="18" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Liga%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="125" w="167" h="-1" measuredW="110" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Kalcho%20San%20roque</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Label" x="138" y="178" w="-1" h="-1" measuredW="39" measuredH="18" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Equipos%3A</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

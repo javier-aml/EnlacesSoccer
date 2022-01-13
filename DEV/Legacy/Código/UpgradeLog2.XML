@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="JESAS">
+</Property><Property Name="Solution File" Value="C:\Arturo\JESAS\JESAS 1.0\JESAS.sln">
+</Property><Property Name="User Options File" Value="C:\Arturo\JESAS\JESAS 1.0\JESAS.suo">
+</Property><Property Name="Date" Value="sábado, 20 de agosto de 2011">
+</Property><Property Name="Time" Value="09:46 a.m.">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="JESAS.sln" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\JESAS.sln">
+</Event><Event ErrorLevel="0" Project="" Source="JESAS.suo" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\JESAS.suo">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="JESAS.vbproj" Description="Project file successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\JESAS.vbproj">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="JESAS.vbproj.user" Description="Project user file successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\JESAS.vbproj.user">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="AssemblyInfo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstatusClienteFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstatusClienteFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstatusFacturaProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstatusFacturaProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsFacturaProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsFacturaProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsFacturaProveedorDetalle.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsFacturaProveedorDetalle.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsFormaEntrega.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsFormaEntrega.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsInsumo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsInsumo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsOrdenCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsOrdenCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsMascotaFoto.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsMascotaFoto.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsObra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsObra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsPagoProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsPagoProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsPagoProveedorFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsPagoProveedorFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsPuesto.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsPuesto.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsAcceso.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsAcceso.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsAccion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsAccion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsCliente.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsCliente.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsControl.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsControl.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEmpleado.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEmpleado.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEmpresa.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEmpresa.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstado.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstado.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstatusEmpleado.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstatusEmpleado.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsMascota.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsMascota.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEmpleadoFoto.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEmpleadoFoto.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsMunicipio.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsMunicipio.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsOpcion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsOpcion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsRentaTractor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsRentaTractor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsTipoCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsTipoCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsTipoInsumo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsTipoInsumo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsTipoMovimiento.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsTipoMovimiento.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsTipoPago.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsTipoPago.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsUsuario.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsUsuario.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstatusOrdenCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstatusOrdenCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsOrdenCompraDetalle.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsOrdenCompraDetalle.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsUnidad.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsUnidad.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsSolicitudCotizacion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsSolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsSolicitudCotizacionDetalle.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsSolicitudCotizacionDetalle.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsClienteFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsClienteFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsVehiculo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsVehiculo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsEstatusVehiculo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsEstatusVehiculo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ClsInsumoPrecios.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ClsInsumoPrecios.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarInsumoPrecio.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarInsumoPrecio.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarCroquis.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarCroquis.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeRentaTractor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeRentaTractor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarRentaTractor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarRentaTractor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmRentaTractor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmRentaTractor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoVehiculo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoVehiculo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmVehiculos.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmVehiculos.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeFacturasClientes.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeFacturasClientes.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarClienteFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarClienteFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmClienteFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmClienteFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeGastosObra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeGastosObra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeMovimientosIMSS.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeMovimientosIMSS.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmMovimientosIMMS.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmMovimientosIMMS.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformePagosProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformePagosProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmConsultaPagoProveedor.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmConsultaPagoProveedor.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmConsultaPagoProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmConsultaPagoProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPagoFacturas.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPagoFacturas.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAutorizacionPagoFactura.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAutorizacionPagoFactura.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaFacturaProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaFacturaProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmFacturaProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmFacturaProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmGastosObra.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmGastosObra.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmGastosObra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmGastosObra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPagoProveedor.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPagoProveedor.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPagoProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPagoProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeVehiculos.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeVehiculos.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeSolicitudCotizacion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeSolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaSolicitudCotizacion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaSolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarSolicitudCotizacion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarSolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmSolicitudCotizacion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmSolicitudCotizacion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoUnidad.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoUnidad.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmUnidades.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmUnidades.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoInsumo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoInsumo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmInsumos.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmInsumos.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoTipoInsumo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoTipoInsumo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmTiposInsumo.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmTiposInsumo.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaOrdenCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaOrdenCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarOrdenCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarOrdenCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoObra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoObra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmObras.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmObras.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAcceso.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAcceso.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmOrdenesCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmOrdenesCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmClientes.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmClientes.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarFacturaProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarFacturaProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmConfiguracionBD.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmConfiguracionBD.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmEmpleados.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmEmpleados.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmLicencia.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmLicencia.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmMenuEmpleado.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmMenuEmpleado.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoEmpleadoFoto.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoEmpleadoFoto.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoCliente.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoCliente.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoEmpleado.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoEmpleado.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoProveedor.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoProveedor.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoUsuario.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoUsuario.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPassword.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPassword.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPrincipal.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPrincipal.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmProveedores.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmProveedores.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmUsuarios.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmUsuarios.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmVisorInforme.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmVisorInforme.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmVisorInforme.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmVisorInforme.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeOrdenCompra.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeOrdenCompra.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ModGeneral.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ModGeneral.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ModuloConfiguracion.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ModuloConfiguracion.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ModuloInicio.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ModuloInicio.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ModuloLicencia.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ModuloLicencia.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="ModuloUtilerias.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\ModuloUtilerias.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="My Project\Application.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\My Project\Application.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="My Project\Resources.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\My Project\Resources.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="RutaArchivos.Designer.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\RutaArchivos.Designer.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="RutaArchivos.vb" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\RutaArchivos.vb">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="app.config" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.xsc" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.xsc">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.xsd" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.xsd">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.xss" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.xss">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="DsInforme.xsx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\DsInforme.xsx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="RutaArchivos.settings" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\RutaArchivos.settings">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="My Project\Application.myapp" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\My Project\Application.myapp">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="OOFL.ICO" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\OOFL.ICO">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarInsumoPrecio.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarInsumoPrecio.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarCroquis.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarCroquis.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeRentaTractor.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeRentaTractor.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarRentaTractor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarRentaTractor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmRentaTractor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmRentaTractor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoVehiculo.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoVehiculo.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmVehiculos.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmVehiculos.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeFacturasClientes.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeFacturasClientes.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarClienteFactura.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarClienteFactura.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmClienteFactura.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmClienteFactura.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeGastosObra.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeGastosObra.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeMovimientosIMSS.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeMovimientosIMSS.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmMovimientosIMMS.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmMovimientosIMMS.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformePagosProveedor.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformePagosProveedor.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmConsultaPagoProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmConsultaPagoProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPagoFacturas.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPagoFacturas.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAutorizacionPagoFactura.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAutorizacionPagoFactura.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaFacturaProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaFacturaProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmFacturaProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmFacturaProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmGastosObra.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmGastosObra.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPagoProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPagoProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeVehiculos.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeVehiculos.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeSolicitudCotizacion.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeSolicitudCotizacion.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaSolicitudCotizacion.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaSolicitudCotizacion.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarSolicitudCotizacion.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarSolicitudCotizacion.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmSolicitudCotizacion.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmSolicitudCotizacion.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoUnidad.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoUnidad.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmUnidades.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmUnidades.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoInsumo.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoInsumo.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmInsumos.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmInsumos.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoTipoInsumo.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoTipoInsumo.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmTiposInsumo.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmTiposInsumo.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarPartidaOrdenCompra.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarPartidaOrdenCompra.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarOrdenCompra.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarOrdenCompra.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoObra.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoObra.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmObras.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmObras.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAcceso.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAcceso.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmOrdenesCompra.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmOrdenesCompra.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmClientes.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmClientes.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmAgregarFacturaProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmAgregarFacturaProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmConfiguracionBD.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmConfiguracionBD.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmEmpleados.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmEmpleados.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmLicencia.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmLicencia.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmMenuEmpleado.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmMenuEmpleado.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoEmpleadoFoto.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoEmpleadoFoto.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoCliente.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoCliente.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoEmpleado.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoEmpleado.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoProveedor.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoProveedor.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmNuevoUsuario.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmNuevoUsuario.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPassword.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPassword.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmPrincipal.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmPrincipal.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmProveedores.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmProveedores.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmUsuarios.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmUsuarios.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="FrmVisorInforme.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\FrmVisorInforme.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="InformeOrdenCompra.rpt" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\InformeOrdenCompra.rpt">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="My Project\Resources.resx" Description="File successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\My Project\Resources.resx">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="JESAS.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="JESAS" Source="JESAS.vbproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="Instalador" Source="..\Instalador\Instalador.vdproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="Instalador.vdproj" Source="..\Instalador\Instalador.vdproj" Description="Project file successfully backed up as C:\Arturo\JESAS\JESAS 1.0\Backup\Instalador\Instalador.vdproj">
+</Event><Event ErrorLevel="0" Project="" Source="JESAS.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="JESAS.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="JESAS" Source="JESAS.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

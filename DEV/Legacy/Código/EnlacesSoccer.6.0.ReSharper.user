@@ -1,0 +1,58 @@
+<Configuration>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/d:My Project/f:Resources.Designer.vb" caret="1334" fromTop="0" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="320" fromTop="0" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmVerTorneo.vb" caret="17680" fromTop="22" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:JornadaPartido.vb" caret="12380" fromTop="7" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmCapturaResultado.vb" caret="24988" fromTop="13" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:jornadaPartidoJugador.vb" caret="3465" fromTop="0" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="1695" fromTop="18" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="4420" fromTop="6" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/d:My Project/f:Resources.Designer.vb" caret="9007" fromTop="29" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/d:My Project/f:Resources.Designer.vb" caret="9343" fromTop="33" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/d:My Project/f:Resources.Designer.vb" caret="8828" fromTop="20" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmVerTorneo.vb" caret="17232" fromTop="7" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmVerTorneo.vb" caret="17881" fromTop="18" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmVerTorneo.vb" caret="19306" fromTop="19" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="2251" fromTop="0" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="135" fromTop="1" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmReportViewerSSRS.vb" caret="2657" fromTop="31" />
+      <File id="B4D94D8C-4025-4FAB-B133-132FD56D2978/f:FrmVerTorneo.vb" caret="17598" fromTop="19" />
+    </RecentEdits>
+  </RecentFiles>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToBoolean`0" priority="11" />
+    </ItemStatistics>
+    <ItemStatistics item="VBCodeCompletionContextSimple">
+      <Item value="Me" priority="13" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TorneoDeacero.FrmReportViewerSSRS">
+      <Item value="pVerPendientes" priority="10" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:TorneoDeacero.FrmVerTorneo">
+      <Item value="chkVerPendientes" priority="10" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir IsNull="False">
+    </NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+</Configuration>

@@ -1,0 +1,71 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="429" measuredH="530" mockupW="369" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="60" y="20" w="369" h="510" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::DataGrid" x="131" y="255" w="227" h="199" measuredW="201" measuredH="198" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>%5BBocaJrs%5D%2C%203%2C%201%2C%20%5BTotenham%5D%20%20%0A%5BCuervos%5D%2C%203%2C4%2C%20%5BCereso%5D%0A%5BRiver%20Huinala%5D%2C%203%2C7%2C%20%5BMonterrey%5D%0A%5BJoyson%5D%2C%202%2C%201%2C%20%5BFrancia%5D%0A%5BINRL%20Pap%E1s%5D%2C%206%2C%202%2C%5BSurima%5D%0A%5BKeyense%5D%2C%204%2C%204%2C%5BHospital%20Angeles%5D%0A%5BAcereros%5D%2C%203%2C%202%2C%5BAutozone%5D%0A%7B25L%2C%2010C%2C%2010C%2C%2025L%7D</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Label" x="138" y="147" w="46" h="-1" measuredW="34" measuredH="18" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Torneo%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="149" w="167" h="-1" measuredW="138" measuredH="21" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Empresarial%202019-2020</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="138" y="174" w="55" h="-1" measuredW="40" measuredH="18" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Jornada%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="174" w="167" h="-1" measuredW="77" measuredH="21" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Jornada%208</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::DateChooser" x="190" y="223" w="166" h="-1" measuredW="168" measuredH="25" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <state>up</state>
+        <text>%20%2002/11/2021%2008%3A00%20%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Label" x="138" y="226" w="55" h="-1" measuredW="30" measuredH="18" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Fecha%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="138" y="198" w="55" h="-1" measuredW="34" measuredH="18" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Arbitro%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="198" w="167" h="-1" measuredW="87" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Arturo%20Brizio</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="138" y="125" w="46" h="-1" measuredW="22" measuredH="18" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Liga%3A</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::ComboBox" x="190" y="123" w="167" h="-1" measuredW="110" measuredH="21" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>10</size>
+        <text>Kalcho%20San%20roque</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
