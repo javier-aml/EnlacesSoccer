@@ -1,6 +1,6 @@
 
 
-create PROCEDURE [dbo].[GuardaJugador]
+ALTER PROCEDURE [dbo].[GuardaJugador]
 @nombre as varchar(100),
 @idusuario as tinyint,
 @nNumeroNomina as int,

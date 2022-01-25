@@ -1,8 +1,8 @@
 USE EnlacesSoccer
 go
---IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('TarjetaPago') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
---DROP TABLE TarjetaPago
---go
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('TarjetaPago') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE TarjetaPago
+go
 
 CREATE TABLE TarjetaPago ( 
 	IdLiga int NOT NULL,

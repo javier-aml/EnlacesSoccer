@@ -1,8 +1,8 @@
 USE EnlacesSoccer
 go
---IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Pago') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
---DROP TABLE Pago
---go
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Pago') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Pago
+go
 
 CREATE TABLE Pago ( 
 	IdLiga int NOT NULL,

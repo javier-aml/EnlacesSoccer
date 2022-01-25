@@ -1,14 +1,14 @@
 USE EnlacesSoccer
 go
---IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Liga') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
---DROP TABLE Liga
---go
+IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Liga') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
+DROP TABLE Liga
+go
 
 CREATE TABLE Liga ( 
 	IdLiga int NOT NULL,
 	Nombre varchar(100) NOT NULL,
 	Representante varchar(100) NOT NULL,
-	Telefono smallint NOT NULL,
+	Telefono bigint NOT NULL,
 	Correo varchar(50) NOT NULL,
 	IdPais tinyint NOT NULL,
 	IdEstado smallint NOT NULL,
