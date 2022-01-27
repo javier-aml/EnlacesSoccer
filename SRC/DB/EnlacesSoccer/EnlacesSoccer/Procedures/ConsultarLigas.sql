@@ -1,23 +1,27 @@
 
 ALTER PROCEDURE dbo.ConsultarLigas
-	@nActivo		int
+	@nIdLiga int
 AS
 BEGIN
 
 	
 	SET NOCOUNT ON;
-
-	select * from Liga
 	
 	SELECT IdLiga
 		  ,Nombre
+		  ,Representante
+		  ,Telefono
+		  ,Correo
+		  ,IdPais
+		  ,IdEstado
+		  ,IdMunicipio
 		  ,case Activo when 1 then 'Activo' else 'Inactivo' END as Estado	  
 	FROM	Liga
-	WHERE ((@nActivo = -1) OR Activo = @nActivo)		
+	WHERE IdLiga = @nIdLiga	
 	ORDER BY Activo Desc, IdPais, IdEstado, IdMunicipio, Nombre
 
 END
 GO
 
-execute dbo.ConsultarLigas @nActivo = 1
+execute dbo.ConsultarLigas @nIdLiga = 1
 

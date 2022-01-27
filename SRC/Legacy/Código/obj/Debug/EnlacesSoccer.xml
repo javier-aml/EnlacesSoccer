@@ -6,169 +6,7 @@ EnlacesSoccer
 </name>
 </assembly>
 <members>
-<member name="F:EnlacesSoccer.FrmEstadisticaSanciones.IsCargando">
-	<summary>
- variable que uso para saber si la pantalla esta en proceso de cargado o no.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmEstadisticaSanciones.llenarTorneosActivos">
-	<summary>
- Metodo que uso para llenar los torneos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.dtJugadores">
-	<summary>
- Lista en la uqe tendre los jugadores disponibles para el torneo.
- </summary>
-	<remarks></remarks>
-</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.IsCargando">
-	<summary>
- variable que uso para saber si la pantalla esta en proceso de cargado o no.
- </summary>
-	<remarks></remarks>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.Add24X24">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.database_save">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.edit1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fifa_ball">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.first">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo2">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo3">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo4">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo5">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.football_player">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.images">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAFAFLUX">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCALILNBH">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAPP5F7B">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.last">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO1">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGo2">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO3">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteReglamento">
-	<summary>
-  Looks up a localized string similar to Reglamento del Torneo.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteSanciones">
-	<summary>
-  Looks up a localized string similar to Reporte de sanciones.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.print16">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.RutaArchivos">
-	<summary>
-  Looks up a localized string similar to C:\EnlacesSoccer\Bin.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_red">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_yellow">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:EnlacesSoccer.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:EnlacesSoccer.FrmJuntas.llenarTorneosActivos">
-	<summary>
- Metodo que uso para llenar los torneos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="F:EnlacesSoccer.FrmVerTorneo.IsCargando">
-	<summary>
- variable que uso para saber si la pantalla esta en proceso de cargado o no.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarTorneosActivos">
-	<summary>
- Metodo que uso para llenar los torneos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarJornadasTorneo">
-	<summary>
- Metodo que uso para llenar las jornadas del torneo seleccionado.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarPartidosPorJornada">
-	<summary>
- metodo para llenar los equipos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="T:EnlacesSoccer.DsInforme.EmpresaDataTable">
+<member name="T:EnlacesSoccer.DsInforme.EmpresaDataTable">
 	<summary>
 Represents the strongly named DataTable class.
 </summary>
@@ -376,6 +214,138 @@ Row event argument class
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
+</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarLista">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmJuntas.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.Add24X24">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.database_save">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.edit1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fifa_ball">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.first">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo4">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.fondo5">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.football_player">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.images">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAFAFLUX">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCALILNBH">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.imagesCAPP5F7B">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.last">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGo2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.LOGO3">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteReglamento">
+	<summary>
+  Looks up a localized string similar to Reglamento del Torneo.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.PantallaReporteSanciones">
+	<summary>
+  Looks up a localized string similar to Reporte de sanciones.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.print16">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.RutaArchivos">
+	<summary>
+  Looks up a localized string similar to C:\EnlacesSoccer\Bin.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_red">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:EnlacesSoccer.My.Resources.Resources.soccer_card_yellow">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:EnlacesSoccer.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member><member name="M:EnlacesSoccer.FrmCapturaResultado.llenarTorneosActivos">
 	<summary>
  Metodo que uso para llenar los torneos activos.
@@ -484,6 +454,51 @@ Represents a strongly typed in-memory cache of data.
  Metodo que utlizo para cargar los torneos activos.
  </summary>
 	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.ClsEquipo.vIdEquipo">
+	<summary>
+ Clase para el manejo de los equipos
+ </summary>
+	<remarks> ||| 29-08-2011 | Jorge Alberto Sanchez |||</remarks>
+</member><member name="F:EnlacesSoccer.FrmVerTorneo.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarJornadasTorneo">
+	<summary>
+ Metodo que uso para llenar las jornadas del torneo seleccionado.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmVerTorneo.llenarPartidosPorJornada">
+	<summary>
+ metodo para llenar los equipos activos.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.dtJugadores">
+	<summary>
+ Lista en la uqe tendre los jugadores disponibles para el torneo.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaJugador.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:EnlacesSoccer.FrmEstadisticaSanciones.IsCargando">
+	<summary>
+ variable que uso para saber si la pantalla esta en proceso de cargado o no.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:EnlacesSoccer.FrmEstadisticaSanciones.llenarTorneosActivos">
+	<summary>
+ Metodo que uso para llenar los torneos activos.
+ </summary>
+	<remarks></remarks>
 </member><member name="M:EnlacesSoccer.FrmConsultaResultado.llenarTorneosActivos">
 	<summary>
  Metodo que uso para llenar los torneos activos.
@@ -494,21 +509,6 @@ Represents a strongly typed in-memory cache of data.
  Metodo que uso para llenar las jornadas del torneo seleccionado.
  </summary>
 	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarTorneosActivos">
-	<summary>
- Metodo que uso para llenar los torneos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="M:EnlacesSoccer.FrmNuevaJunta.llenarLista">
-	<summary>
- Metodo que uso para llenar los torneos activos.
- </summary>
-	<remarks></remarks>
-</member><member name="F:EnlacesSoccer.ClsEquipo.vIdEquipo">
-	<summary>
- Clase para el manejo de los equipos
- </summary>
-	<remarks> ||| 29-08-2011 | Jorge Alberto Sanchez |||</remarks>
 </member>
 </members>
 </doc>
