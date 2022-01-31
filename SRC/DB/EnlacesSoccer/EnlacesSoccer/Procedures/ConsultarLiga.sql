@@ -1,5 +1,5 @@
 
-ALTER PROCEDURE dbo.ConsultarLigas
+ALTER PROCEDURE dbo.ConsultarLiga
 	@nIdLiga int
 AS
 BEGIN
@@ -23,5 +23,5 @@ BEGIN
 END
 GO
 
-execute dbo.ConsultarLigas @nIdLiga = 1
+execute dbo.ConsultarLiga @nIdLiga = 1
 

@@ -1,26 +1,28 @@
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Arbitro') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
-DROP TABLE Arbitro
-GO
-
+USE DATABASE EnlacesSoccer
+go
 CREATE TABLE Arbitro ( 
+	IdLiga int NOT NULL,
 	IdArbitro tinyint NOT NULL,
-	Nombre varchar(100) NOT NULL,
-	Telefono varchar(50) NULL,
-	Activo bit DEFAULT 1 NOT NULL,
-	JuegosArbitrados smallint DEFAULT 0 NOT NULL,
-	FechaUltimaMod smalldatetime DEFAULT getdate() NOT NULL,
-	NombrePcMod varchar(50) DEFAULT host_name() NOT NULL,
-	ClaUsuarioMod tinyint DEFAULT 0 NOT NULL
-)
-GO
+	Nombre varchar NOT NULL,
+	Telefono varchar NULL,
+	Activo bit DEFAULT ((1)) NOT NULL,
+	JuegosArbitrados smallint DEFAULT ((0)) NOT NULL,
+	FechaUltimaMod smalldatetime DEFAULT (getdate()) NOT NULL,
+	NombrePcMod varchar DEFAULT (host_name()) NOT NULL,
+	ClaUsuarioMod tinyint DEFAULT ((0)) NOT NULL
+) 
+
+go
 
 ALTER TABLE Arbitro
 	ADD CONSTRAINT UQ_Arbitro_Nombre UNIQUE (Nombre)
-GO
-
+go
 ALTER TABLE Arbitro ADD CONSTRAINT PK_Arbitro 
-	PRIMARY KEY CLUSTERED (IdArbitro)
-GO
+PRIMARY KEY (IdLiga, IdArbitro) 
+
+go
+
+
 
 
 

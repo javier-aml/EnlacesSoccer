@@ -1,42 +1,42 @@
-USE Operacion
-GO
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('TorneoEquipoJugador') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
-DROP TABLE TorneoEquipoJugador
-GO
-
+USE EnlacesSoccer
+go
 CREATE TABLE TorneoEquipoJugador ( 
-	IdTorneo tinyint NOT NULL,
-	IdEquipo tinyint NOT NULL,
-	IdJugador smallint NOT NULL,
+	IdLiga int NOT NULL,
+	IdTorneo int NOT NULL,
+	IdEquipo int NOT NULL,
+	IdJugador int NOT NULL,
 	PartidosJugados tinyint NOT NULL,
 	GolesAnotados tinyint NOT NULL,
 	TarjetasAmarillasRecibidas tinyint NOT NULL,
 	TarjetasRojasRecibidas tinyint NOT NULL,
-	FechaUltimaMod smalldatetime DEFAULT getdate() NOT NULL,
-	NombrePcMod varchar(50) DEFAULT host_name() NOT NULL,
-	ClaUsuarioMod tinyint DEFAULT 0 NOT NULL
+	FechaUltimaMod smalldatetime DEFAULT (getdate()) NOT NULL,
+	NombrePcMod varchar(50) DEFAULT (host_name()) NOT NULL,
+	ClaUsuarioMod tinyint DEFAULT ((0)) NOT NULL,
+	NumeroJugador smallint DEFAULT ((0)) NOT NULL
 )
-GO
+go
 
 ALTER TABLE TorneoEquipoJugador
 	ADD CONSTRAINT UK_TorneoJugador UNIQUE (IdTorneo, IdJugador)
-GO
+go
 
 ALTER TABLE TorneoEquipoJugador ADD CONSTRAINT PK_TorneoEquipoJugador 
-	PRIMARY KEY CLUSTERED (IdTorneo, IdEquipo, IdJugador)
-GO
+	PRIMARY KEY CLUSTERED (IdLiga, IdTorneo, IdEquipo, IdJugador)
+go
 
 ALTER TABLE TorneoEquipoJugador ADD CONSTRAINT FK_TorneoEquipoJugador_Equipo 
-	FOREIGN KEY (IdEquipo) REFERENCES Equipo (IdEquipo)
-GO
+	FOREIGN KEY (IdLiga, IdEquipo) REFERENCES Equipo (IdLiga, IdEquipo)
+go
 
 ALTER TABLE TorneoEquipoJugador ADD CONSTRAINT FK_TorneoEquipoJugador_Jugador 
-	FOREIGN KEY (IdJugador) REFERENCES Jugador (IdJugador)
-GO
+	FOREIGN KEY (IdLiga, IdJugador) REFERENCES Jugador (IdLiga, IdJugador)
+go
 
 ALTER TABLE TorneoEquipoJugador ADD CONSTRAINT FK_TorneoEquipoJugador_Torneo 
-	FOREIGN KEY (IdTorneo) REFERENCES Torneo (IdTorneo)
-GO
+	FOREIGN KEY (IdLiga, IdTorneo) REFERENCES Torneo (IdLiga, IdTorneo)
+go
+
+
 
 
 
