@@ -8,8 +8,8 @@ GO
 -- Create date: 01/09/2011
 -- Description:	Guarda un nuevo arbitro
 -- =============================================
-CREATE PROCEDURE GuardarArbitroSI
---ALTER PROCEDURE dbo.GuardarArbitroSI
+ALTER PROCEDURE GuardarArbitroSI
+	@pnIdLiga INT,
 	@snombre as varchar(50),
 	@idusuario as tinyint
 AS
@@ -21,21 +21,21 @@ SET NOCOUNT ON
 
 --Variables
 
-	DECLARE		@nIdArbitro	INT			SET @nIdArbitro		= dbo.ObtieneSiguienteIdArbitro()
+	DECLARE		@nIdArbitro	INT			SET @nIdArbitro		= dbo.ObtieneSiguienteIdArbitro(@pnIdLiga)
 
 --Si no existe uno con el mismo nombre, se guarda...
 
 	IF NOT EXISTS	(SELECT 1
 					FROM	dbo.Arbitro
-					WHERE	Nombre = @snombre)
+					WHERE	IdLiga = @pnIdLiga AND Nombre = @snombre)
 	BEGIN
 				INSERT	INTO		dbo.Arbitro
 				(	
-					IdArbitro,			Nombre,			Telefono,			Activo,
+					IdLiga, IdArbitro,			Nombre,			Telefono,			Activo,
 					JuegosArbitrados,	FechaUltimaMod,	NombrePcMod,		ClaUsuarioMod
 				)VALUES
 				(
-					@nIdArbitro,		@snombre,		null,				1,
+					@pnIdLiga, @nIdArbitro,		@snombre,		null,				1,
 					0,					@dDia,			'TEST',				@idusuario	
 				)
 	END

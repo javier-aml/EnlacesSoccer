@@ -1,15 +1,13 @@
-use torneoDEACERO
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz 
 -- Create date: 06/09/2011
 -- Description:	Buscar una junta en especifico
 -- =============================================
-create PROCEDURE BuscarJuntaDetSel
---ALTER PROCEDURE BuscarJuntaDetSel 
+--ALTER PROCEDURE BuscarJuntaDetSel
+ALTER PROCEDURE BuscarJuntaDetSel 
+	@IdLiga	        INT,
 	@pnIdJunta		int,
 	@pnIdTorneo		int
 AS
@@ -20,7 +18,7 @@ SET NOCOUNT ON
 				ISNULL(Acuerdos,'') AS Acuerdos,
 				ISNULL(Observaciones,'') AS Observaciones
 	FROM		dbo.Junta
-	WHERE		IdJunta		= @pnIdJunta
+	WHERE		IdLiga = @IdLiga AND IdJunta = @pnIdJunta
 	and			IdTorneo	= @pnIdTorneo
 	
 SET NOCOUNT OFF

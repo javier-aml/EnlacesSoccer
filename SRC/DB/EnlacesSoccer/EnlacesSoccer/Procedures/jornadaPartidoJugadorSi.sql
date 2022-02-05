@@ -1,9 +1,11 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-alter PROCEDURE jornadaPartidoJugadorSi
+ALTER PROCEDURE jornadaPartidoJugadorSi
+	@pnIdLiga					INT,
 	@nIdTorneo					TINYINT,
 	@nIdJornada					TINYINT,
 	@nIdEquipo					TINYINT,
@@ -18,11 +20,12 @@ AS
 BEGIN
 SET NOCOUNT ON;
 	--DECLARACION DE VARIABLES
-	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = GETDATE()
+	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = dbo.ObtieneFechaActual()
 	
 	IF EXISTS (	SELECT	1
 				FROM	dbo.JornadaPartidoJugador
-				WHERE	IdTorneo = @nIdTorneo
+				WHERE	IdLiga = @pnIdLiga
+					AND IdTorneo = @nIdTorneo
 					AND	IdJornada = @nIdJornada
 					AND IdEquipo = @nIdEquipo
 					AND	IdJugador = @nIdJugador )
@@ -35,7 +38,8 @@ SET NOCOUNT ON;
 				,FechaUltimaMod			= @tFechaActual
 				,NombrePcMod			= @sNombrePcMod
 				,ClaUsuarioMod			= @nClaUsuarioMod
-		WHERE	IdTorneo	= @nIdTorneo
+		WHERE	IdLiga		= @pnIdLiga
+			AND IdTorneo	= @nIdTorneo
 			AND	IdJornada	= @nIdJornada
 			AND IdEquipo	= @nIdEquipo
 			AND IdJugador	= @nIdJugador
@@ -43,7 +47,8 @@ SET NOCOUNT ON;
 	ELSE
 	BEGIN											
 		INSERT INTO dbo.JornadaPartidoJugador
-			(IdTorneo
+			(IdLiga
+			,IdTorneo
 			,IdJornada
 			,IdEquipo
 			,IdJugador
@@ -54,7 +59,8 @@ SET NOCOUNT ON;
 			,FechaUltimaMod
 			,NombrePcMod
 			,ClaUsuarioMod)
-	SELECT	IdTorneo				= @nIdTorneo
+	SELECT	IdLiga					= @pnIdLiga
+		   ,IdTorneo				= @nIdTorneo
            ,IdJornada				= @nIdJornada
            ,IdEquipo				= @nIdEquipo
            ,IdJugador				= @nIdJugador

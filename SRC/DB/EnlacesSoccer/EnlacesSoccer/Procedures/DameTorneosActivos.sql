@@ -1,15 +1,14 @@
-
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 
+--exec dbo.DameTorneosActivos @pnIdLiga = 1, @Activo = 1
+
 ALTER PROCEDURE dbo.DameTorneosActivos
+@pnIdLiga	INT,
 @Activo BIT = 1
 
 AS
@@ -19,15 +18,11 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 	
-	SELECT	IdTorneo , Nombre
+	SELECT	IdLiga, IdTorneo , Nombre
 	FROM	Torneo
-	WHERE Activo = @Activo OR @Activo = 0
-	ORDER BY Activo desc
+	WHERE IdLiga = @pnIdLiga AND Activo = @Activo OR @Activo = 0
+	ORDER BY IdLiga, Activo desc
 
 
 END
-GO
 
-
-
-EXEC DameTorneosActivos

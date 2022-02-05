@@ -1,7 +1,4 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz Acevedo
 -- Create date: 21/09/2011
@@ -13,7 +10,8 @@ GO
 */
 -- =============================================
 
-create PROCEDURE JornadasParaJuntas
+ALTER PROCEDURE JornadasParaJuntas
+	@pnIdLiga	INT,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS
@@ -31,7 +29,8 @@ BEGIN
 	insert into #jornada
 	SELECT	IdJornada, 'Jornada '+CONVERT(VARCHAR, IdJornada) as Nombre
 	FROM	Jornada
-	WHERE	IdTorneo = @nIdTorneo
+	WHERE	IdLiga   = @pnIdLiga
+	AND     IdTorneo = @nIdTorneo
 	AND		IdJornada = @nIdJornada
 --	AND		PorJugar = 0
 	end
@@ -40,7 +39,8 @@ BEGIN
 	insert into #jornada	
 	select	top 1 IdJornada, 'Jornada '+CONVERT(VARCHAR, IdJornada) as Nombre
 	from jornada
-	where	IdTorneo	= @nIdTorneo
+	where	IdLiga   = @pnIdLiga
+	AND     IdTorneo	= @nIdTorneo
 	and		PorJugar	= 1
 	end
 
@@ -51,4 +51,4 @@ BEGIN
 	drop table #jornada
 
 END
-GO
+

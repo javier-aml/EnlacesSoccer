@@ -1,9 +1,12 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
--- Description:	<Description,,> exec jugadoresEquipoSel 2,2,1,6
+-- Description:	<Description,,> 
+--exec jugadoresEquipoSel @pnIdLiga = 1, @nIdTorneo = 2, @nIdJornada = 2, @nIdEquipo1 = 1, @nIdEquipo2 = 6
 -- =============================================
 ALTER PROCEDURE [dbo].[jugadoresEquipoSel]
+	@pnIdLiga	INT,
 	@nIdTorneo	TINYINT,
 	@nIdJornada	TINYINT,
 	@nIdEquipo1	TINYINT,
@@ -33,25 +36,31 @@ SET NOCOUNT ON
 			,ISNULL(ja2.Asistio,0) AS AsistioEq2
 	FROM	dbo.JornadaPartido jp
 	LEFT JOIN	dbo.Equipo eq1
-	ON	jp.IdEquipo1 = eq1.IdEquipo
+	ON	jp.IdLiga = eq1.IdLiga
+	AND jp.IdEquipo1 = eq1.IdEquipo
 	LEFT JOIN	dbo.Equipo eq2
-	ON	jp.IdEquipo2 = eq2.IdEquipo
+	ON	jp.IdLiga = eq2.IdLiga
+	AND jp.IdEquipo2 = eq2.IdEquipo
 	LEFT JOIN dbo.JornadaAsistencia ja
 	ON	jp.IdEquipo1 = ja.IdEquipo
 	AND	jp.IdJornada = ja.IdJOrnada
+	AND jp.IdLiga = ja.IdLiga
 	AND jp.IdTorneo = ja.IdTorneo
 	LEFT JOIN dbo.JornadaAsistencia ja2
 	ON	jp.IdEquipo2 = ja2.IdEquipo
 	AND	jp.IdJornada = ja.IdJOrnada
+	AND jp.IdLiga = ja.IdLiga
 	AND jp.IdTorneo = ja.IdTorneo
-	WHERE	jp.IdTorneo = @nIdTorneo
+	WHERE	jp.IdLiga   = @pnIdLiga
+		AND jp.IdTorneo = @nIdTorneo
 		AND jp.IdJornada = @nIdJornada
 		AND jp.IdEquipo1 = @nIdEquipo1
 		AND jp.IdEquipo2 = @nIdEquipo2
 	
 	IF EXISTS (	SELECT	1
 				FROM	dbo.JornadaPartidoJugador 
-				WHERE	IdTorneo = @nIdTorneo 
+				WHERE	IdLiga   = @pnIdLiga
+				    AND IdTorneo = @nIdTorneo 
 					AND IdJornada = @nIdJornada 
 					AND IdEquipo = @nIdEquipo1)
 	BEGIN
@@ -64,12 +73,15 @@ SET NOCOUNT ON
 				jpj.Jugo
 		FROM	dbo.JornadaPartidoJugador jpj
 		JOIN dbo.TorneoEquipoJugador  tej
-			ON	jpj.IdTorneo = tej.IdTorneo
+			ON	jpj.IdLiga = tej.IdLiga
+			AND jpj.IdTorneo = tej.IdTorneo
 			AND	jpj.IdEquipo = tej.IdEquipo
 			AND	jpj.IdJugador = tej.IdJugador
 		JOIN dbo.Jugador j
-			ON	jpj.IdJugador = j.IdJugador
-		WHERE	jpj.IdTorneo = @nIdTorneo
+			ON	jpj.IdLiga = j.IdLiga
+			AND jpj.IdJugador = j.IdJugador
+		WHERE	jpj.IdLiga = @pnIdLiga
+			AND jpj.IdTorneo = @nIdTorneo
 			AND jpj.IdJornada = @nIdJornada
 			AND	jpj.IdEquipo = @nIdEquipo1
 			AND j.Activo = 1
@@ -86,16 +98,18 @@ SET NOCOUNT ON
 				,CONVERT(BIT, 1) AS Jugo
 		FROM	dbo.TorneoEquipoJugador  tej
 		LEFT JOIN dbo.Jugador 	j
-			ON	tej.IdJugador = j.IdJugador
-		WHERE	IdTorneo = @nIdTorneo
-			AND	IdEquipo = @nIdEquipo1
+			ON	tej.IdLiga = j.IdLiga AND tej.IdJugador = j.IdJugador
+		WHERE	tej.IdLiga = @pnIdLiga
+			AND tej.IdTorneo = @nIdTorneo
+			AND	tej.IdEquipo = @nIdEquipo1
 			AND Activo = 1
 		ORDER BY j.Nombre		
 	END
 	
 	IF EXISTS (	SELECT	1
 				FROM	dbo.JornadaPartidoJugador 
-				WHERE	IdTorneo = @nIdTorneo 
+				WHERE	IdLiga = @pnIdLiga
+					AND IdTorneo = @nIdTorneo 
 					AND IdJornada = @nIdJornada 
 					AND IdEquipo = @nIdEquipo2)
 	BEGIN		
@@ -108,12 +122,14 @@ SET NOCOUNT ON
 				jpj.Jugo
 		FROM	dbo.JornadaPartidoJugador jpj
 		LEFT JOIN dbo.TorneoEquipoJugador  tej
-			ON	jpj.IdTorneo = tej.IdTorneo
+			ON	jpj.IdLiga = tej.IdLiga
+			AND jpj.IdTorneo = tej.IdTorneo
 			AND	jpj.IdEquipo = tej.IdEquipo
 			AND	jpj.IdJugador = tej.IdJugador
 		LEFT JOIN dbo.Jugador j
-			ON	jpj.IdJugador = j.IdJugador
-		WHERE	jpj.IdTorneo = @nIdTorneo
+			ON	jpj.IdLiga = j.IdLiga AND jpj.IdJugador = j.IdJugador
+		WHERE	jpj.IdLiga = @pnIdLiga
+			AND jpj.IdTorneo = @nIdTorneo
 			AND jpj.IdJornada = @nIdJornada
 			AND	jpj.IdEquipo = @nIdEquipo2
 			AND j.Activo = 1
@@ -130,15 +146,14 @@ SET NOCOUNT ON
 				,CONVERT(BIT, 1) AS Jugo
 		FROM	dbo.TorneoEquipoJugador  tej
 		LEFT JOIN dbo.Jugador 	j
-			ON	tej.IdJugador = j.IdJugador
-		WHERE	IdTorneo = @nIdTorneo
-			AND	IdEquipo = @nIdEquipo2
+			ON	tej.IdLiga = j.IdLiga AND tej.IdJugador = j.IdJugador
+		WHERE	tej.IdLiga = @pnIdLiga
+			AND	tej.IdTorneo = @nIdTorneo
+			AND	tej.IdEquipo = @nIdEquipo2
 			AND Activo = 1
 		ORDER BY j.Nombre
 	END
 
 SET NOCOUNT OFF
 END
-
-
 

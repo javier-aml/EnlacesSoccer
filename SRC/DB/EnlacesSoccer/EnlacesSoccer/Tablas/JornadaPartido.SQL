@@ -34,7 +34,7 @@ ALTER TABLE JornadaPartido ADD CONSTRAINT FK_JornadaPartido_Arbitro
 go
 
 ALTER TABLE JornadaPartido ADD CONSTRAINT FK_JornadaPartido_Jornada 
-	FOREIGN KEY (IdTorneo, IdJornada) REFERENCES Jornada (IdLiga, IdTorneo, IdJornada)
+	FOREIGN KEY (IdLiga, IdTorneo, IdJornada) REFERENCES Jornada (IdLiga, IdTorneo, IdJornada)
 go
 
 

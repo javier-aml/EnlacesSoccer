@@ -1,14 +1,12 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 
-CREATE PROCEDURE JornadasPorTorneo
+ALTER PROCEDURE JornadasPorTorneo
+	@pnIdLiga	INT,
 	@nIdTorneo	INT
 AS
 BEGIN
@@ -16,8 +14,8 @@ BEGIN
 	
 	SELECT	IdJornada, 'Jornada '+CONVERT(VARCHAR, IdJornada) Nombre
 	FROM	Jornada
-	WHERE	IdTorneo = @nIdTorneo
+	WHERE	IdLiga =  @pnIdLiga AND IdTorneo = @nIdTorneo
 	ORDER BY IdJornada
 
 END
-GO
+

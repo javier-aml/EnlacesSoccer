@@ -1,5 +1,7 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ALTER PROCEDURE ConsultarTorneos
+	@pnIdLiga		INT,
 	@nActivo		int
 AS
 BEGIN
@@ -7,11 +9,13 @@ BEGIN
 	
 	SET NOCOUNT ON;
 	
-	SELECT IdTorneo
+	SELECT IdLiga
+		  ,IdTorneo
 		  ,Nombre
 		  ,case Activo when 1 then 'Activo' else 'Inactivo' END as Estado	  
 	FROM	Torneo
-	WHERE ((@nActivo = -1) OR Activo = @nActivo)		
+	WHERE IdLiga = @pnIdLiga
+	AND ((@nActivo = -1) OR Activo = @nActivo)		
 	ORDER BY Estado, IdTorneo
 
 END

@@ -1,6 +1,7 @@
 
 
-CREATE PROCEDURE [dbo].[GuardaConfiguracion]
+ALTER PROCEDURE [dbo].[GuardaConfiguracion]
+@pnIdLiga INT,
 @descripcion AS VARCHAR(250),
 @ValorNumerico AS NUMERIC(10,2),
 @ValorAlfanumerico AS VARCHAR(250),
@@ -10,17 +11,19 @@ AS
 
    declare @IdConfiguracion as tinyint
 
-   set @IdConfiguracion = dbo.ObtieneSiguienteIdConfiguracion() 
+   set @IdConfiguracion = dbo.ObtieneSiguienteIdConfiguracion(@pnIdLiga) 
  
    insert into dbo.Configuracion (
-   	IdConfiguracion,
+   	IdLiga,
+	IdConfiguracion,
    	Descripcion,
    	ValorNumerico,   
    	ValorAlfanumerico,
    	ValorFecha,
    	Activa,   
    	ClaUsuarioMod
-   ) VALUES (@IdConfiguracion,
+   ) VALUES (@pnIdLiga,
+			 @IdConfiguracion,
    			 @Descripcion,
    			 @ValorNumerico,
    			 @ValorAlfanumerico,

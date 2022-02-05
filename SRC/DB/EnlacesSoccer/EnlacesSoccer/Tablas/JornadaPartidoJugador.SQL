@@ -20,6 +20,14 @@ ALTER TABLE JornadaPartidoJugador ADD CONSTRAINT PK_JornadaPartidoJugador
 	PRIMARY KEY CLUSTERED (IdTorneo, IdJornada, IdEquipo, IdJugador, IdLiga)
 go
 
+ALTER TABLE JornadaPartidoJugador ADD CONSTRAINT FK_JornadaPartidoJugador_Equipo 
+	FOREIGN KEY (IdLiga, IdEquipo) REFERENCES Equipo (IdLiga, IdEquipo)
+go
+
+ALTER TABLE JornadaPartidoJugador ADD CONSTRAINT FK_JornadaPartidoJugador_Jugador 
+	FOREIGN KEY (IdLiga, IdJugador) REFERENCES Jugador (IdLiga, IdJugador)
+go
+
 
 
 

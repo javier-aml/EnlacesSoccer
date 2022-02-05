@@ -1,3 +1,4 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
@@ -5,6 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE [dbo].[PartidosPorJornadaPorTorneoReporte]
+	@pnIdLiga	INT,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS
@@ -33,10 +35,11 @@ BEGIN
 				END AS Hora
 		FROM	dbo.JornadaPartido jp
 		LEFT JOIN	dbo.Equipo eq1
-		ON	jp.IdEquipo1 = eq1.IdEquipo
+		ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 		LEFT JOIN	dbo.Equipo eq2
-		ON	jp.IdEquipo2 = eq2.IdEquipo
-		WHERE	IdTorneo = @nIdTorneo
+		ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+		WHERE	jp.IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo
 			AND IdJornada = @nIdJornada
 			AND IdEquipo1 != 0
 			AND IdEquipo2 != 0
@@ -51,32 +54,13 @@ BEGIN
 				' ' AS Hora
 		FROM	dbo.JornadaPartido jp
 		LEFT JOIN	dbo.Equipo eq1
-		ON	jp.IdEquipo1 = eq1.IdEquipo
+		ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 		LEFT JOIN	dbo.Equipo eq2
-		ON	jp.IdEquipo2 = eq2.IdEquipo
-		WHERE	IdTorneo = @nIdTorneo
+		ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+		WHERE	jp.IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo
 			AND IdJornada = @nIdJornada
 			AND (IdEquipo1 = 0 OR IdEquipo2 = 0)
---	UNION 
---		SELECT	eq1.Nombre AS NombreEquipo1, 
---				CASE Jugado 
---					WHEN 0 THEN 'vs.'
---					ELSE CONVERT(VARCHAR, GolesEquipo1)+' - '+CONVERT(VARCHAR, GolesEquipo2)
---				END AS Resultado, 
---				eq2.Nombre AS NombreEquipo2,
---				CONVERT(CHAR(11), jp.FechaHora, 113) AS Fecha,
---				CONVERT(CHAR(5), jp.FechaHora, 108) AS Hora
---		FROM	dbo.JornadaPartido jp
---		LEFT JOIN	dbo.Equipo eq1
---		ON	jp.IdEquipo1 = eq1.IdEquipo
---		LEFT JOIN	dbo.Equipo eq2
---		ON	jp.IdEquipo2 = eq2.IdEquipo
---		WHERE	IdTorneo = @nIdTorneo
---			AND IdJornada < @nIdJornada
---			AND IdEquipo1 != 0
---			AND IdEquipo2 != 0
---			AND	Jugado = 0
---			AND Programado = 0
 		ORDER BY Resultado DESC, Fecha ASC, Hora ASC
 	END
 	ELSE
@@ -97,10 +81,11 @@ BEGIN
 				END AS Hora
 		FROM	dbo.JornadaPartido jp
 		LEFT JOIN	dbo.Equipo eq1
-		ON	jp.IdEquipo1 = eq1.IdEquipo
+		ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 		LEFT JOIN	dbo.Equipo eq2
-		ON	jp.IdEquipo2 = eq2.IdEquipo
-		WHERE	IdTorneo = @nIdTorneo
+		ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+		WHERE	jp.IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo
 			AND IdJornada = @nIdJornada
 			AND IdEquipo1 != 0
 			AND IdEquipo2 != 0
@@ -115,10 +100,11 @@ BEGIN
 				CONVERT(CHAR(5), jp.FechaHora, 108) AS Hora
 		FROM	dbo.JornadaPartido jp
 		LEFT JOIN	dbo.Equipo eq1
-		ON	jp.IdEquipo1 = eq1.IdEquipo
+		ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 		LEFT JOIN	dbo.Equipo eq2
-		ON	jp.IdEquipo2 = eq2.IdEquipo
-		WHERE	IdTorneo = @nIdTorneo
+		ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+		WHERE	jp.IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo
 			AND IdJornada < @nIdJornada
 			AND IdEquipo1 != 0
 			AND IdEquipo2 != 0
@@ -127,4 +113,4 @@ BEGIN
 		ORDER BY Resultado DESC, Fecha ASC, Hora ASC
 	END
 END
-GO
+

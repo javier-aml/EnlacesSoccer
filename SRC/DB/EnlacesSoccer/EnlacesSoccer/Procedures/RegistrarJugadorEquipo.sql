@@ -1,3 +1,4 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
@@ -5,6 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE RegistrarJugadorEquipo
+	@pnIdLiga		INT,
 	@nIdTorneo		INT,
 	@nIdEquipo		INT,
 	@nIdJugador		INT,
@@ -19,13 +21,18 @@ BEGIN
 	--DECLARACION DE VARIABLES
 	DECLARE @nFechaActual DATETIME		
 	
-	SET @nFechaActual = GETDATE()
+	SET @nFechaActual = dbo.ObtieneFechaActual()
 	
-	IF NOT EXISTS(SELECT 1 FROM TorneoEquipoJugador WITH(NOLOCK) WHERE IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
+	IF NOT EXISTS(SELECT 1 FROM TorneoEquipoJugador WITH(NOLOCK) 
+				  WHERE IdLiga  = @pnIdLiga
+				  AND IdTorneo = @nIdTorneo 
+				  AND IdEquipo = @nIdEquipo 
+				  AND IdJugador = @nIdJugador)
 	BEGIN
 
 		INSERT INTO TorneoEquipoJugador
-			   (IdTorneo
+			   (IdLiga
+			   ,IdTorneo
 			   ,IdEquipo
 			   ,IdJugador
 			   ,PartidosJugados
@@ -36,8 +43,8 @@ BEGIN
 			   ,NombrePcMod
 			   ,ClaUsuarioMod
 			   ,NumeroJugador)
-		 SELECT 
-			   IdTorneo						= @nIdTorneo
+		 SELECT IdLiga						= @pnIdLiga
+			   ,IdTorneo					= @nIdTorneo
 			   ,IdEquipo					= @nIdEquipo
 			   ,IdJugador					= @nIdJugador
 			   ,PartidosJugados				= 0
@@ -53,16 +60,22 @@ BEGIN
 
 		IF NOT EXISTS(SELECT 1 
 					  FROM   jornadapartidojugador JPJ
-					  WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
+					  WHERE  IdLiga  = @pnIdLiga
+					  AND IdTorneo = @nIdTorneo 
+					  AND IdEquipo = @nIdEquipo 
+					  AND IdJugador = @nIdJugador)
 		BEGIN
 		
 			DECLARE @IdJugadorMin AS INT
 						
 			SELECT @IdJugadorMin = MIN(IdJugador)
 			FROM jornadapartidojugador
-			WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo 			
+			WHERE  IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo 
+			AND IdEquipo = @nIdEquipo 			
 			
-			INSERT INTO jornadapartidojugador(  IdTorneo,
+			INSERT INTO jornadapartidojugador(  IdLiga,
+											    IdTorneo,
 												IdJornada,
 												IdEquipo,
 												IdJugador,
@@ -73,7 +86,8 @@ BEGIN
 												FechaUltimaMod,
 												NombrePcMod,
 												ClaUsuarioMod)
-			SELECT  IdTorneo,
+			SELECT  IdLiga,
+					IdTorneo,
 					IdJornada,
 					IdEquipo,
 					@nIdJugador,
@@ -85,22 +99,28 @@ BEGIN
 					NombrePcMod,
 					ClaUsuarioMod
 			FROM jornadapartidojugador
-			WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @IdJugadorMin
+			WHERE   IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo 
+			AND IdEquipo = @nIdEquipo 
+			AND IdJugador = @IdJugadorMin
 			
 		END
 				
 		
 		IF NOT EXISTS(SELECT 1 
 					  FROM   TorneoEquipoJugador TEJ
-					  WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
+					  WHERE  IdLiga  = @pnIdLiga
+					  AND IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
 		AND     EXISTS(SELECT 1 
 					   FROM   jornadapartidojugador JPJ
-					   WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
+					   WHERE  IdLiga  = @pnIdLiga
+					   AND IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador)
 		BEGIN
 		
 			DELETE JPJ
 			FROM   jornadapartidojugador JPJ
-			WHERE  IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador
+			WHERE  IdLiga  = @pnIdLiga
+			AND IdTorneo = @nIdTorneo AND IdEquipo = @nIdEquipo AND IdJugador = @nIdJugador
 		
 		END
 		

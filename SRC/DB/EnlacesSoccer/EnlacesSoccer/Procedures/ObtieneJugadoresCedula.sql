@@ -1,6 +1,8 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
--- [dbo].[ObtieneJugadoresCedula] 4, 50
+
+--EXEC [dbo].[ObtieneJugadoresCedula] @pnIdLiga = 1, @IdTorneo = 5, @IdEquipo = 54
 ALTER PROCEDURE [dbo].[ObtieneJugadoresCedula]
+	@pnIdLiga	INT,
 	@IdTorneo	TINYINT,	
 	@IdEquipo	TINYINT	
 AS
@@ -31,8 +33,9 @@ SET NOCOUNT ON
 						 END,
 				Suspendido = ''				
 		FROM	dbo.TorneoEquipoJugador  TEJ
-		LEFT JOIN dbo.Jugador 			 JUG ON	TEJ.IdJugador = JUG.IdJugador
-		WHERE	TEJ.IdTorneo  = @IdTorneo		
+		LEFT JOIN dbo.Jugador 			 JUG ON	TEJ.IdLiga = JUG.IdLiga AND TEJ.IdJugador = JUG.IdJugador
+		WHERE	TEJ.IdLiga	  = @pnIdLiga
+		AND     TEJ.IdTorneo  = @IdTorneo		
 		AND		TEJ.IdEquipo  = @IdEquipo
 		AND		JUG.Activo    = 1
 		ORDER BY JUG.Nombre
@@ -41,7 +44,8 @@ SET NOCOUNT ON
 		
 		SELECT @UltimaJornada = MAX(IdJornada) + 1
 		FROM dbo.JornadaPartidoJugador WITH (NOLOCK)
-		WHERE IdTorneo = @IdTorneo
+		WHERE IdLiga   = @pnIdLiga
+		AND   IdTorneo = @IdTorneo
 		AND   IdEquipo = @IdEquipo
 		
 		
@@ -54,8 +58,11 @@ SET NOCOUNT ON
 					 JPJ.IdJugador,
 					 JPJ.IdJornada			
 		FROM       dbo.JornadaPartidoJugador JPJ 
-		INNER JOIN dbo.Sancion				 SAN ON (JPJ.IdTorneo = SAN.IdTorneo AND JPJ.IdEquipo = SAN.IdEquipo AND JPJ.IdJugador = SAN.IdJugador AND JPJ.IdJornada = SAN.IdJornada)
-		WHERE      JPJ.RecibioTarjetaRoja = 1 AND JPJ.IdTorneo = @IdTorneo AND JPJ.IdEquipo = @IdEquipo
+		INNER JOIN dbo.Sancion				 SAN ON (JPJ.IdLiga = SAN.IdLiga AND JPJ.IdTorneo = SAN.IdTorneo AND JPJ.IdEquipo = SAN.IdEquipo AND JPJ.IdJugador = SAN.IdJugador AND JPJ.IdJornada = SAN.IdJornada)
+		WHERE      JPJ.RecibioTarjetaRoja = 1 
+		AND JPJ.IdLiga   = @pnIdLiga 
+		AND JPJ.IdTorneo = @IdTorneo 
+		AND JPJ.IdEquipo = @IdEquipo
 		GROUP BY JPJ.IdTorneo,
 					 JPJ.IdEquipo,	
 					 JPJ.IdJugador,
@@ -112,6 +119,4 @@ SET NOCOUNT ON
 
 SET NOCOUNT OFF
 END
-
-
 

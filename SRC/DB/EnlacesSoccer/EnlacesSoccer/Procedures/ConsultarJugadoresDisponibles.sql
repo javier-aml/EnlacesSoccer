@@ -1,10 +1,12 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 --EXEC ConsultarJugadoresDisponibles 1
-CREATE PROCEDURE dbo.ConsultarJugadoresDisponibles
+ALTER PROCEDURE dbo.ConsultarJugadoresDisponibles
+	@pnIdLiga		INT,
 	@nIdTorneo		INT
 AS
 BEGIN
@@ -13,8 +15,9 @@ BEGIN
 	SET NOCOUNT ON;
 
 
-	--Obtengo los jugadores que ya fueron asignados a el equipo en cuestion.
-	SELECT	JUG.IdJugador
+	
+	SELECT	JUG.IdLiga,
+			JUG.IdJugador
 			,TEJ.NumeroJugador as Número
 			,JUG.Nombre as [Nombre jugador]
 			,CASE 
@@ -31,13 +34,14 @@ BEGIN
 			 END AS EsLibre
 			,TEJ.IdEquipo AS IdEquipo
 			
-	FROM	Jugador										JUG
-	LEFT JOIN	(SELECT * 
-				FROM	TorneoEquipoJugador
-				WHERE	IdTorneo = @nIdTorneo)			TEJ
-		ON	jug.IdJugador = TEJ.IdJugador
-	LEFT JOIN	Equipo									EQ
-		ON	EQ.IdEquipo = TEJ.IdEquipo
+	FROM Jugador JUG
+	--Obtengo los jugadores que ya fueron asignados a el equipo en cuestion.
+	LEFT JOIN (SELECT IdLiga, IdEquipo, IdJugador,NumeroJugador
+			   FROM	TorneoEquipoJugador
+			   WHERE	IdLiga = @pnIdLiga AND IdTorneo = @nIdTorneo) TEJ
+		ON	jug.IdLiga = TEJ.IdLiga AND jug.IdJugador = TEJ.IdJugador
+	LEFT JOIN Equipo EQ
+		ON	EQ.IdLiga = TEJ.IdLiga AND EQ.IdEquipo = TEJ.IdEquipo
 	WHERE JUG.Activo = 1					
 						
 						

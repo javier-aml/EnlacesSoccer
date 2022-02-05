@@ -1,5 +1,8 @@
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--EXEC [dbo].[ObtieneCredencialesPorEquipo2] @pnIdLiga = 1, @IdTorneo = 5, @IdEquipo = 54
+--SELECT * FROM TorneoEquipoJugador WHERE IdLiga = 1 and IdTorneo = 5
 ALTER PROCEDURE [dbo].[ObtieneCredencialesPorEquipo2]
+@pnIdLiga	INT,
 @IdTorneo as smallint,
 @IdEquipo as smallint
 AS
@@ -21,9 +24,9 @@ BEGIN
 		   Equipo = EQU.Nombre
 	INTO #tmpCredencial		   
 	FROM TorneoEquipoJugador TEJ
-	INNER JOIN Jugador JUG ON (TEJ.IdJugador = JUG.IdJugador)
-	INNER JOIN Equipo		 EQU ON (TEJ.IdEquipo = EQU.IdEquipo)
-	WHERE TEJ.IdTorneo = @IdTorneo AND TEJ.IdEquipo = @IdEquipo 
+	INNER JOIN Jugador JUG ON (TEJ.IdLiga = JUG.IdLiga AND TEJ.IdJugador = JUG.IdJugador)
+	INNER JOIN Equipo		 EQU ON (TEJ.IdLiga = EQU.IdLiga AND TEJ.IdEquipo = EQU.IdEquipo)
+	WHERE TEJ.IdLiga = @pnIdLiga AND TEJ.IdTorneo = @IdTorneo AND TEJ.IdEquipo = @IdEquipo 
 	AND JUG.Activo = 1
 	
 	SELECT @TotalJugadores = COUNT(1)
@@ -41,6 +44,4 @@ BEGIN
 	DROP TABLE #tmpCredencial
 
 END
-
-GO
 

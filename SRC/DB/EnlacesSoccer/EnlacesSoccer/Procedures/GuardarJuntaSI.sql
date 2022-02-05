@@ -1,15 +1,12 @@
-use TorneoDEACERO
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz 
 -- Create date: 06/09/2011
 -- Description:	Guarda una nueva junta
 -- =============================================
-CREATE PROCEDURE GuardarJuntaSI
---ALTER PROCEDURE dbo.GuardarJuntaSI
+--ALTER PROCEDURE GuardarJuntaSI
+ALTER PROCEDURE dbo.GuardarJuntaSI
+	@pnIdLiga	INT,
 	@psAcuerdos VARCHAR(500),
 	@psObservaciones VARCHAR(500),
 	@idusuario as tinyint,
@@ -22,11 +19,11 @@ BEGIN
 SET NOCOUNT ON
 --Constantes
 	
-	DECLARE		@dDia		SMALLDATETIME	SET @dDia			= GETDATE()
+	DECLARE		@dDia		SMALLDATETIME	SET @dDia			= dbo.ObtieneFechaActual()
 
 --Variables
 
-	DECLARE		@nIdJunta	INT			SET @nIdJunta		= dbo.ObtieneSiguienteIdJunta()
+	DECLARE		@nIdJunta	INT			SET @nIdJunta		= dbo.ObtieneSiguienteIdJunta(@pnIdLiga)
 	
 	SET @pnIdJunta = @nIdJunta
 
@@ -37,16 +34,17 @@ SET NOCOUNT ON
 					FROM	dbo.Junta
 					WHERE	DATEDIFF(DAY,0,FechaHora) = 
 							DATEDIFF(DAY,0,@dFecha)
+					AND     IdLiga = @pnIdLiga
 					AND		IdTorneo	= @idTorneo
 					)
 	BEGIN
 		INSERT	INTO		dbo.Junta
 		(	
-			IdJunta,		FechaHora,		Acuerdos,		Observaciones,
+			IdLiga, IdJunta,		FechaHora,		Acuerdos,		Observaciones,
 			FechaUltimaMod,	NombrePcMod,	ClaUsuarioMod,	IdTorneo
 		)VALUES
 		(
-			@nIdJunta,		@dFecha,		@psAcuerdos,	@psObservaciones,
+			@pnIdLiga, @nIdJunta,		@dFecha,		@psAcuerdos,	@psObservaciones,
 			@dDia,			'TEST',			@idusuario,		@idTorneo
 		)
 	END
@@ -57,3 +55,4 @@ SET NOCOUNT ON
 
 SET NOCOUNT OFF
 END
+

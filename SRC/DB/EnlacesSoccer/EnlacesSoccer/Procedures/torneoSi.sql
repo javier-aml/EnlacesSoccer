@@ -1,13 +1,11 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE torneoSi
+ALTER PROCEDURE [dbo].[torneoSi]
+	@pnIdLiga				INT,
 	@sNombreTorneo			VARCHAR (100),
 	@sNombrePcMod			VARCHAR(50),
 	@nClaUsuarioMod			TINYINT
@@ -16,17 +14,19 @@ BEGIN
 SET NOCOUNT ON;
 
 	--DECLARACION DE VARIABLES
-	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = GETDATE()
+	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = dbo.ObtieneFechaActual()
 	DECLARE @nIdTorneo		INT
-	SELECT @nIdTorneo=count(IdTorneo)+1 FROM Torneo
+	SELECT @nIdTorneo=COUNT(IdTorneo)+1 FROM Torneo WHERE Idliga = IdLiga
 										
 	INSERT INTO Torneo
-		   (IdTorneo
+		   (IdLiga
+		   ,IdTorneo
            ,Nombre
            ,FechaUltimaMod
            ,NombrePcMod
            ,ClaUsuarioMod)
-	SELECT	IdTorneo			= @nIdTorneo
+	SELECT  IdLiga				= @pnIdLiga
+	       ,IdTorneo			= @nIdTorneo
            ,Nombre				= @sNombreTorneo
            ,FechaUltimaMod		= @tFechaActual
            ,NombrePcMod			= @sNombrePcMod
@@ -34,4 +34,4 @@ SET NOCOUNT ON;
            
     SELECT @nIdTorneo AS IdTorneo
 END
-GO
+

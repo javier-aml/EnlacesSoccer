@@ -1,5 +1,7 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ALTER PROCEDURE [dbo].[ModificarTorneo]
+	@pnIdLiga		 INT,
 	@IdTorneo		 TINYINT,
 	@Nombre		     VARCHAR (100),
 	@Activo			 BIT
@@ -10,7 +12,7 @@ SET NOCOUNT ON;
 	--DECLARACION DE VARIABLES
 	DECLARE @NombrePcMod	 VARCHAR(50)
 	DECLARE @ClaUsuarioMod AS INT	
-	DECLARE @FechaActual	DATETIME	SET @FechaActual = GETDATE()
+	DECLARE @FechaActual	DATETIME	SET @FechaActual = dbo.ObtieneFechaActual()
 		
 	SELECT @NombrePcMod = HOST_NAME()
 	SELECT @ClaUsuarioMod = 1	
@@ -21,7 +23,8 @@ SET NOCOUNT ON;
            FechaUltimaMod = @FechaActual,
            NombrePcMod    = @NombrePcMod,
            ClaUsuarioMod  = @ClaUsuarioMod
-	WHERE  IdTorneo = @IdTorneo           
+	WHERE  IdLiga = @pnIdLiga	
+	AND IdTorneo = @IdTorneo           
                
 END
 

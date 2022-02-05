@@ -1,13 +1,11 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE torneoEquipoSu
+ALTER PROCEDURE torneoEquipoSu
+	@pnIdLiga					INT,
 	@nIdTorneo					TINYINT,
 	@nIdEquipo					TINYINT,
 	@nIdJornada					TINYINT,
@@ -29,7 +27,7 @@ AS
 BEGIN
 SET NOCOUNT ON;
 	--DECLARACION DE VARIABLES
-	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = GETDATE()
+	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = dbo.ObtieneFechaActual()
 										
 	UPDATE TorneoEquipo
 	SET	PartidosJugados				= @nPartidosJugados
@@ -46,8 +44,9 @@ SET NOCOUNT ON;
        ,FechaUltimaMod				= @tFechaActual
        ,NombrePcMod					= @sNombrePcMod
        ,ClaUsuarioMod				= @nClaUsuarioMod
-	WHERE IdTorneo					= @nIdTorneo
+	WHERE IdLiga					= @pnIdLiga
+	AND IdTorneo					= @nIdTorneo
 	AND	IdEquipo					= @nIdEquipo
 	AND	IdJornada					= @nIdJornada
 END
-GO
+

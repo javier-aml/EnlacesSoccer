@@ -1,4 +1,5 @@
 ALTER PROCEDURE [dbo].[GuardaTipoSancion]
+@pnIdLiga INT,
 @clave AS VARCHAR(6),
 @descripcion AS VARCHAR(250),
 @juegossuspension tinyint,
@@ -8,17 +9,19 @@ AS
 
    declare @idtiposancion as tinyint
 
-   set @idtiposancion = dbo.ObtieneSiguienteIdTipoSancion() 
+   set @idtiposancion = dbo.ObtieneSiguienteIdTipoSancion(@pnIdLiga) 
  
    insert into dbo.TipoSancion (
-   	IdTipoSancion,
+   	IdLiga,
+	IdTipoSancion,
    	Clave,
    	Descripcion,
    	JuegosSuspension,
    	CausaBaja,
    	Activa,   
    	ClaUsuarioMod
-   ) VALUES (@idtiposancion,
+   ) VALUES (@pnIdLiga,
+			 @idtiposancion,
    			 @clave,
    			 @descripcion,
    			 @juegossuspension,

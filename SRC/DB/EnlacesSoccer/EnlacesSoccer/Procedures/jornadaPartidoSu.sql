@@ -1,9 +1,11 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE [dbo].[jornadaPartidoSu]
+	@pnIdLiga					INT,
 	@nIdTorneo					TINYINT,
 	@nIdJornada					TINYINT,
 	@nIdEquipo1					TINYINT,
@@ -25,7 +27,7 @@ AS
 BEGIN
 SET NOCOUNT ON;
 	--DECLARACION DE VARIABLES
-	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = GETDATE()
+	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = dbo.ObtieneFechaActual()
 	DECLARE @nPendientes	INT SET @nPendientes = 0
 	DECLARE @nPorJugar		INT SET @nPorJugar = 1
 
@@ -44,24 +46,34 @@ SET NOCOUNT ON;
            ,FechaUltimaMod			= @tFechaActual
            ,NombrePcMod				= @sNombrePcMod
            ,ClaUsuarioMod			= @nClaUsuarioMod
-	WHERE	IdTorneo	= @nIdTorneo
+	WHERE	IdLiga		= @pnIdLiga
+		AND IdTorneo	= @nIdTorneo
 		AND	IdJornada	= @nIdJornada
 		AND IdEquipo1	= @nIdEquipo1
 		AND IdEquipo2	= @nIdEquipo2
 	
-	IF EXISTS (SELECT 1 FROM dbo.JornadaPartido WHERE	IdTorneo	= @nIdTorneo
-		AND	IdJornada	= @nIdJornada
-		AND IdEquipo1	= @nIdEquipo1
-		AND IdEquipo2	= @nIdEquipo2
-		AND Jugado = 1 )
+	IF EXISTS (SELECT 1 
+			   FROM dbo.JornadaPartido 
+			   WHERE IdLiga = @pnIdLiga	
+		   AND IdTorneo	    = @nIdTorneo
+		   AND IdJornada	= @nIdJornada
+		   AND IdEquipo1	= @nIdEquipo1
+		   AND IdEquipo2	= @nIdEquipo2
+		   AND Jugado = 1 )
 		SET @nPorJugar = 0
 	
-	IF EXISTS (SELECT 1 FROM dbo.JornadaPartido WHERE	IdTorneo	= @nIdTorneo
+	IF EXISTS (SELECT 1 
+			   FROM dbo.JornadaPartido 
+			   WHERE IdLiga = @pnIdLiga	
+		   AND 	IdTorneo	= @nIdTorneo
 		AND	IdJornada	= @nIdJornada
 		AND Jugado = 0 )
 		SET @nPendientes = 1
 	
-	UPDATE jornada SET PorJugar = @nPorJugar, TieneJuegoPendiente=@nPendientes WHERE IdTorneo= @nIdTorneo AND IdJornada = @nIdJornada
-END
+	UPDATE jornada 
+	SET PorJugar = @nPorJugar, TieneJuegoPendiente=@nPendientes 
+	WHERE IdLiga = @pnIdLiga AND  IdTorneo= @nIdTorneo AND IdJornada = @nIdJornada
 
+
+END
 

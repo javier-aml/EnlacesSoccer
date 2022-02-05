@@ -1,43 +1,41 @@
-USE Operacion
-GO
-IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = object_id('Sancion') AND  OBJECTPROPERTY(id, 'IsUserTable') = 1)
-DROP TABLE Sancion
-GO
-
+USE EnlacesSoccer
+go
 CREATE TABLE Sancion ( 
-	IdTorneo tinyint NOT NULL,
-	IdEquipo tinyint NOT NULL,
+	IdLiga int NOT NULL,
+	IdTorneo int NOT NULL,
+	IdEquipo int NOT NULL,
 	IdJornada tinyint NOT NULL,
-	IdJugador smallint NOT NULL,
-	IdTipoSancion tinyint NOT NULL,
-	JuegosSuspendido tinyint DEFAULT 1 NOT NULL,
+	IdJugador int NOT NULL,
+	JuegosSuspendido tinyint DEFAULT ((1)) NOT NULL,
 	JuegosPendientes tinyint NOT NULL,
-	Activa bit DEFAULT 1 NOT NULL,
-	FechaUltimaMod smalldatetime DEFAULT getdate() NOT NULL,
-	NombrePcMod varchar(50) DEFAULT host_name() NOT NULL,
-	ClaUsuarioMod tinyint DEFAULT 0 NOT NULL
+	Activa bit DEFAULT ((1)) NOT NULL,
+	FechaUltimaMod smalldatetime DEFAULT (getdate()) NOT NULL,
+	NombrePcMod varchar(50) DEFAULT (host_name()) NOT NULL,
+	ClaUsuarioMod tinyint DEFAULT ((0)) NOT NULL,
+	IdTipoSancion int NOT NULL
 )
-GO
+go
 
 ALTER TABLE Sancion ADD CONSTRAINT PK_Sancion 
-	PRIMARY KEY CLUSTERED (IdTorneo, IdEquipo, IdJornada, IdJugador, IdTipoSancion)
-GO
+	PRIMARY KEY CLUSTERED (IdLiga, IdTorneo, IdEquipo, IdJornada, IdJugador, IdTipoSancion)
+go
 
 ALTER TABLE Sancion ADD CONSTRAINT FK_Sancion_Equipo 
-	FOREIGN KEY (IdEquipo) REFERENCES Equipo (IdEquipo)
-GO
+	FOREIGN KEY (IdLiga, IdEquipo) REFERENCES Equipo (IdLiga, IdEquipo)
+go
 
 ALTER TABLE Sancion ADD CONSTRAINT FK_Sancion_Jornada 
-	FOREIGN KEY (IdTorneo, IdJornada) REFERENCES Jornada (IdTorneo, IdJornada)
-GO
+	FOREIGN KEY (IdLiga, IdTorneo, IdJornada) REFERENCES Jornada (IdLiga, IdTorneo, IdJornada)
+go
 
 ALTER TABLE Sancion ADD CONSTRAINT FK_Sancion_Jugador 
-	FOREIGN KEY (IdJugador) REFERENCES Jugador (IdJugador)
-GO
+	FOREIGN KEY (IdLiga, IdJugador) REFERENCES Jugador (IdLiga, IdJugador)
+go
 
 ALTER TABLE Sancion ADD CONSTRAINT FK_Sancion_TipoSancion 
-	FOREIGN KEY (IdTipoSancion) REFERENCES TipoSancion (IdTipoSancion)
-GO
+	FOREIGN KEY (IdLiga, IdTipoSancion) REFERENCES TipoSancion (IdLiga, IdTipoSancion)
+go
+
 
 
 

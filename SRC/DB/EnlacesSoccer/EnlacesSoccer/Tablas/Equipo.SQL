@@ -19,6 +19,10 @@ ALTER TABLE Equipo ADD CONSTRAINT PK_Equipo
 	PRIMARY KEY CLUSTERED (IdLiga, IdEquipo)
 go
 
+ALTER TABLE Equipo ADD CONSTRAINT FK_Equipo_Liga 
+	FOREIGN KEY (IdLiga) REFERENCES Liga (IdLiga)
+go
+
 
 
 

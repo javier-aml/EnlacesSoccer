@@ -18,15 +18,15 @@ ALTER TABLE JornadaAsistencia ADD CONSTRAINT PK_JornadaAsistencia
 go
 
 ALTER TABLE JornadaAsistencia ADD CONSTRAINT FK_JornadaAsistencia_Equipo 
-	FOREIGN KEY (IdEquipo) REFERENCES Equipo (IdLiga, IdEquipo)
+	FOREIGN KEY (IdLiga, IdEquipo) REFERENCES Equipo (IdLiga, IdEquipo)
 go
 
 ALTER TABLE JornadaAsistencia ADD CONSTRAINT FK_JornadaAsistencia_Jornada 
-	FOREIGN KEY (IdTorneo, IdJornada) REFERENCES Jornada (IdLiga, IdTorneo, IdJornada)
+	FOREIGN KEY (IdLiga, IdTorneo, IdJornada) REFERENCES Jornada (IdLiga, IdTorneo, IdJornada)
 go
 
 ALTER TABLE JornadaAsistencia ADD CONSTRAINT FK_JornadaAsistencia_Torneo 
-	FOREIGN KEY (IdTorneo) REFERENCES Torneo (IdLiga, IdTorneo)
+	FOREIGN KEY (IdLiga, IdTorneo) REFERENCES Torneo (IdLiga, IdTorneo)
 go
 
 

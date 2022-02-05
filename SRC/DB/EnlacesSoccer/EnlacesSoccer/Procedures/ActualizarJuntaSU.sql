@@ -1,15 +1,13 @@
-use TorneoDEACERO
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz 
 -- Create date: 01/09/2011
 -- Description:	Actualiza una junta
 -- =============================================
-CREATE PROCEDURE dbo.ActualizarJuntaSU
 --ALTER PROCEDURE dbo.ActualizarJuntaSU
+ALTER PROCEDURE dbo.ActualizarJuntaSU
+	@IdLiga	    INT,
 	@pnIdJunta	smallint,
 	@pnIdTorneo	tinyint,
 	@psAcuerdos	varchar(500),
@@ -20,7 +18,7 @@ BEGIN
 SET NOCOUNT ON
 --Constantes
 	
-	DECLARE		@dDia		DATETIME	SET @dDia			= GETDATE()
+	DECLARE		@dDia		DATETIME	SET @dDia			= dbo.ObtieneFechaActual()
 
 --Variables
 	
@@ -29,7 +27,7 @@ SET NOCOUNT ON
 
 	IF  EXISTS	(SELECT 1
 				FROM	dbo.Junta
-				WHERE	IdJunta = @pnIdJunta
+				WHERE	IdLiga = @IdLiga AND IdJunta = @pnIdJunta
 					AND IdTorneo= @pnIdTorneo)
 	BEGIN
 				UPDATE dbo.Junta
@@ -39,7 +37,7 @@ SET NOCOUNT ON
 					FechaUltimaMod	= @dDia,
 					NombrePcMod		= 'TEST',
 					ClaUsuarioMod	= @idusuario
-				WHERE	IdJunta		= @pnIdJunta
+				WHERE	IdLiga = @IdLiga AND IdJunta		= @pnIdJunta
 					AND IdTorneo	= @pnIdTorneo
 	END
 

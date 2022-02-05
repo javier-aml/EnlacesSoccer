@@ -31,7 +31,7 @@ ALTER TABLE LiguillaPartido ADD CONSTRAINT PK_LiguillaPartido
 go
 
 ALTER TABLE LiguillaPartido ADD CONSTRAINT FK_LiguillaPartido_Arbitro 
-	FOREIGN KEY (IdArbitro) REFERENCES Arbitro (IdLiga, IdArbitro)
+	FOREIGN KEY (IdLiga, IdArbitro) REFERENCES Arbitro (IdLiga, IdArbitro)
 go
 
 ALTER TABLE LiguillaPartido ADD CONSTRAINT FK_LiguillaPartido_FaseLiguilla 
@@ -39,7 +39,7 @@ ALTER TABLE LiguillaPartido ADD CONSTRAINT FK_LiguillaPartido_FaseLiguilla
 go
 
 ALTER TABLE LiguillaPartido ADD CONSTRAINT FK_LiguillaPartido_Torneo 
-	FOREIGN KEY (IdTorneo) REFERENCES Torneo (IdLiga, IdTorneo)
+	FOREIGN KEY (IdLiga, IdTorneo) REFERENCES Torneo (IdLiga, IdTorneo)
 go
 
 

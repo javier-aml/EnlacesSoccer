@@ -1,7 +1,9 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
---dbo.ObtenerInformacionTorneo 3
+--EXEC dbo.ObtenerInformacionTorneo @pnIdLiga = 1, @IdTorneo = 5
 
 ALTER PROCEDURE dbo.ObtenerInformacionTorneo
+	@pnIdLiga	   INT,
 	@IdTorneo		int
 AS
 BEGIN
@@ -12,7 +14,8 @@ BEGIN
 	SELECT Nombre,
 		   Activo
 	FROM	Torneo
-	WHERE IdTorneo = @IdTorneo		
+	WHERE IdLiga = @pnIdLiga
+	AND IdTorneo = @IdTorneo		
 	
 
 END

@@ -1,17 +1,12 @@
-USE [TorneoDEACERO]
-GO
-/****** Object:  StoredProcedure [dbo].[PartidosJugadosPorJornadaPorTorneo]******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz Acevedo
 -- Create date: 20/09/2011
 -- Description:	Obtengo los partidos jugados por jornada por torneo
 -- =============================================
-
-CREATE PROCEDURE [dbo].[PartidosJugadosPorJornadaPorTorneo]
+--EXEC PartidosJugadosPorJornadaPorTorneo @pnIdLiga = 1, @nIdTorneo = 5, @nIdJornada = 1
+ALTER PROCEDURE [dbo].[PartidosJugadosPorJornadaPorTorneo]
+	@pnIdLiga	INT,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS
@@ -30,10 +25,11 @@ BEGIN
 			jp.IdEquipo2
 	FROM	dbo.JornadaPartido jp
 	LEFT JOIN	dbo.Equipo eq1
-	ON	jp.IdEquipo1 = eq1.IdEquipo
+	ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 	LEFT JOIN	dbo.Equipo eq2
-	ON	jp.IdEquipo2 = eq2.IdEquipo
-	WHERE	IdTorneo = @nIdTorneo
+	ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+	WHERE	jp.IdLiga   = @pnIdLiga
+		AND IdTorneo = @nIdTorneo
 		AND IdJornada = @nIdJornada
 		AND IdEquipo1 != 0
 		AND IdEquipo2 != 0
@@ -47,12 +43,14 @@ BEGIN
 		END AS Descansa
 	FROM	dbo.JornadaPartido jp
 	LEFT JOIN	dbo.Equipo eq1
-	ON	jp.IdEquipo1 = eq1.IdEquipo
+	ON	jp.IdLiga = eq1.IdLiga AND jp.IdEquipo1 = eq1.IdEquipo
 	LEFT JOIN	dbo.Equipo eq2
-	ON	jp.IdEquipo2 = eq2.IdEquipo
-	WHERE	IdTorneo = @nIdTorneo
+	ON	jp.IdLiga = eq2.IdLiga AND jp.IdEquipo2 = eq2.IdEquipo
+	WHERE	jp.IdLiga   = @pnIdLiga
+		AND IdTorneo = @nIdTorneo
 		AND IdJornada = @nIdJornada
 		AND (IdEquipo1 = 0 OR IdEquipo2 = 0)
 		AND ISNULL(Jugado,0) > 0
 		
 END
+

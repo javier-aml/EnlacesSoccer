@@ -1,15 +1,12 @@
-
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 --ConsultarEstadisticaSancionesReporte 1
-CREATE PROCEDURE ConsultarEstadisticaSancionesReporte
+ALTER PROCEDURE ConsultarEstadisticaSancionesReporte
+	@pnIdLiga		INT,
 	@pnIdTorneo		INT--,
 	--@pnIdJornada	INT
 AS
@@ -19,7 +16,8 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 
-	SELECT distinct SA.IdTorneo,
+	SELECT distinct SA.IdLiga,
+			SA.IdTorneo,
 			SA.IdEquipo,
 			SA.IdJornada,
 			SA.IdJugador,
@@ -32,17 +30,15 @@ BEGIN
 			TS.Clave 
 	FROM	Sancion		SA
 	JOIN    Equipo		EQ
-		ON	SA.IdEquipo = EQ.IdEquipo
+		ON	SA.IdLiga = EQ.IdLiga AND SA.IdEquipo = EQ.IdEquipo
 	JOIN	Jugador		JUG
-		ON	SA.IdJugador = JUG.IdJugador
+		ON	SA.IdLiga = JUG.IdLiga AND SA.IdJugador = JUG.IdJugador
 	JOIN    TipoSancion TS
-		ON	SA.IdTipoSancion = TS.IdTipoSancion
-	WHERE	IdTorneo = @pnIdTorneo
+		ON	SA.IdLiga = TS.IdLiga AND SA.IdTipoSancion = TS.IdTipoSancion
+	WHERE	SA.IdLiga = @pnIdLiga
+	AND     SA.IdTorneo = @pnIdTorneo
 		--AND IdJornada = @pnIdJornada
 		AND SA.Activa = 1
-	GROUP BY SA.IdTorneo,SA.IdEquipo,SA.IdJornada,SA.IdJugador,EQ.Nombre,JUG.Nombre,TS.Descripcion,TS.Clave
+	GROUP BY SA.IdLiga, SA.IdTorneo,SA.IdEquipo,SA.IdJornada,SA.IdJugador,EQ.Nombre,JUG.Nombre,TS.Descripcion,TS.Clave
 END
-GO
-
-
 

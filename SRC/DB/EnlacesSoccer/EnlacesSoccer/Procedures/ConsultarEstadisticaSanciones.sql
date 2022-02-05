@@ -1,15 +1,12 @@
-
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
 --ConsultarEstadisticaSanciones 1
-CREATE PROCEDURE ConsultarEstadisticaSanciones
+ALTER PROCEDURE ConsultarEstadisticaSanciones
+	@pnIdLiga		INT,
 	@pnIdTorneo		INT--,
 	--@pnIdJornada	INT
 AS
@@ -19,7 +16,8 @@ BEGIN
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
 
-	SELECT  SA.IdTorneo,
+	SELECT  SA.IdLiga,
+			SA.IdTorneo,
 			SA.IdEquipo,
 			SA.IdJornada,
 			SA.IdJugador,
@@ -30,12 +28,13 @@ BEGIN
 			SUM(SA.JuegosPendientes) AS [Juegos pendientes]
 	FROM	Sancion		SA
 	JOIN    Equipo		EQ
-		ON	SA.IdEquipo = EQ.IdEquipo
+		ON	SA.IdLiga = EQ.IdLiga AND SA.IdEquipo = EQ.IdEquipo
 	JOIN	Jugador		JUG
-		ON	SA.IdJugador = JUG.IdJugador
-	WHERE	IdTorneo = @pnIdTorneo
+		ON	SA.IdLiga = JUG.IdLiga AND SA.IdJugador = JUG.IdJugador
+	WHERE	SA.IdLiga = @pnIdLiga
+	AND     SA.IdTorneo = @pnIdTorneo
 		--AND IdJornada = @pnIdJornada
 		AND SA.Activa = 1
-	GROUP BY SA.IdTorneo,SA.IdEquipo,SA.IdJornada,SA.IdJugador,EQ.Nombre,JUG.Nombre
+	GROUP BY SA.IdLiga, SA.IdTorneo,SA.IdEquipo,SA.IdJornada,SA.IdJugador,EQ.Nombre,JUG.Nombre
 END
-GO
+

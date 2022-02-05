@@ -1,23 +1,30 @@
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 -- =============================================
 -- Author:		Felipe Diaz 
 -- Create date: 01/09/2011
 -- Description:	Muestra las estadisticas por equipo en el torneo y en la jornada seleccionada
---	EXEC EstadisticasTorneoJornadaSel 1,1
+-- EXEC EstadisticasTorneoJornadaSel @pnIdLiga = 1, @pnIdTorneo = 2, @pnidJornada = 3
 -- =============================================
 ALTER PROCEDURE EstadisticasTorneoJornadaSel
+	@pnIdLiga	INT,
 	@pnIdTorneo as int,
-	@pnidJornada as int
+	@pnidJornada as int 
 	
 AS
 BEGIN
 SET NOCOUNT ON
 
-	--select @pnidJornada = max(idJornada)
-	--from
-	--	dbo.Jornada
-	--where
-	--	IdTorneo = @pnIdTorneo
-
+	if isnull( @pnIdJornada, 0 ) = 0
+	begin
+		select @pnidJornada = max(idJornada)
+		from
+			dbo.Jornada
+		where IdLiga = @pnIdLiga
+		AND IdTorneo = @pnIdTorneo
+	end
+	
 	declare @nContador int
 	declare @nTotalEquipos INT
 	declare @nEquipo int
@@ -37,9 +44,9 @@ SET NOCOUNT ON
 		[GolesContra] int,
 		[DiferenciaGoles] int,
 		[Puntos] int,
-		[PuntosFairPlay] [numeric](2, 1),
-		[PuntosDescontadosFairPlay] [numeric](2, 1),
-		[PuntosDescontadosJunta] [numeric](2, 1),
+		[PuntosFairPlay] [numeric](3, 1),
+		[PuntosDescontadosFairPlay] [numeric](3, 1),
+		[PuntosDescontadosJunta] [numeric](3, 1),
 		[PuntosTotales] [numeric](5, 1),
 		[NombreTorneo] varchar(100)
 	)
@@ -53,7 +60,8 @@ SET NOCOUNT ON
 	on		a.idequipo = b.Idequipo
 	JOIN	dbo.Torneo c
 	on		c.IdTorneo	= a.Idtorneo
-	where a.idtorneo = @pnIdTorneo
+	where a.IdLiga = @pnIdLiga
+		AND a.idtorneo = @pnIdTorneo
 
 	SELECT @nTotalEquipos = COUNT(id)
 			from #resultados
@@ -75,7 +83,8 @@ SET NOCOUNT ON
 			--Obtengo la maxima jornada donde el equipo en cuestion tenga resultados grabados
 			SELECT	@nUltimaJornada = ISNULL(MAX(IdJornada),0)
 			FROM	dbo.TorneoEquipo
-			WHERE	IdTorneo		= @pnIdTorneo
+			WHERE	IdLiga			= @pnIdLiga
+			AND     IdTorneo		= @pnIdTorneo
 			AND		IdEquipo		= @nEquipo
 			AND		IdJornada		<= @pnidJornada
 
@@ -95,7 +104,8 @@ SET NOCOUNT ON
 			from	dbo.TorneoEquipo a		
 			join	#resultados b
 			on		b.IdEquipo = a.IdEquipo
-			where	a.IdTorneo	= @pnIdTorneo
+			where	a.IdLiga    = @pnIdLiga
+			and		a.IdTorneo	= @pnIdTorneo
 			and		a.IdEquipo	= @nEquipo
 			and		a.IdJornada	= @nUltimaJornada
 			and		b.ID= @nContador
@@ -111,3 +121,4 @@ SET NOCOUNT ON
 	
 SET NOCOUNT OFF
 END
+

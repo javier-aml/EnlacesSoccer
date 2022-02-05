@@ -1,13 +1,11 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		<Author,,Name>
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE jornadaPartidoSi
+ALTER PROCEDURE [dbo].[jornadaPartidoSi]
+	@pnIdLiga					INT,
 	@nIdTorneo					TINYINT,
 	@nIdJornada					TINYINT,
 	@nIdEquipo1					TINYINT,
@@ -19,6 +17,8 @@ CREATE PROCEDURE jornadaPartidoSi
 	@nRecibioTarjetaREquipo1	BIT,
 	@nRecibioTarjetaREquipo2	BIT,
 	@nJugado					BIT,
+	@nProgramado				BIT,
+	@tFechaHora					DATETIME,
 	@nIdArbitro					TINYINT,
 	@sNombrePcMod				VARCHAR(50),
 	@nClaUsuarioMod				TINYINT
@@ -27,10 +27,11 @@ AS
 BEGIN
 SET NOCOUNT ON;
 	--DECLARACION DE VARIABLES
-	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = GETDATE()
+	DECLARE @tFechaActual	DATETIME	SET @tFechaActual = dbo.ObtieneFechaActual()
 										
 	INSERT INTO JornadaPartido
-		   (IdTorneo
+		   (IdLiga
+		   ,IdTorneo
            ,IdJornada
            ,IdEquipo1
            ,IdEquipo2
@@ -41,12 +42,15 @@ SET NOCOUNT ON;
            ,RecibioTarjetaREquipo1
            ,RecibioTarjetaREquipo2
            ,Jugado
+           ,Observaciones
+           ,Programado
            ,IdArbitro
            ,FechaHora
            ,FechaUltimaMod
            ,NombrePcMod
            ,ClaUsuarioMod)
-	SELECT	IdTorneo				= @nIdTorneo
+	SELECT	IdLiga					= @pnIdLiga
+		   ,IdTorneo				= @nIdTorneo
            ,IdJornada				= @nIdJornada
            ,IdEquipo1				= @nIdEquipo1
            ,IdEquipo2				= @nIdEquipo2
@@ -57,10 +61,12 @@ SET NOCOUNT ON;
            ,RecibioTarjetaREquipo1	= @nRecibioTarjetaREquipo1
            ,RecibioTarjetaREquipo2	= @nRecibioTarjetaREquipo2
            ,Jugado					= @nJugado
+           ,Observaciones			= ''
+           ,Programado				= @nProgramado
            ,IdArbitro				= @nIdArbitro
-           ,FechaHora				= @tFechaActual
+           ,FechaHora				= @tFechaHora
            ,FechaUltimaMod			= @tFechaActual
            ,NombrePcMod				= @sNombrePcMod
            ,ClaUsuarioMod			= @nClaUsuarioMod
 END
-GO
+

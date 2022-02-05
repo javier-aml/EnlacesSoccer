@@ -1,10 +1,14 @@
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ALTER PROCEDURE dbo.ActualizaEstadistica
 (
-@IdTorneo TINYINT,
+@IdLiga	   INT,
+@IdTorneo  TINYINT,
 @IdJornada TINYINT,
-@IdEquipo TINYINT
+@IdEquipo  TINYINT
 )
 AS
+BEGIN
 
 	--Obtengo la última jornada jugada por este equipo
 	--SELECT @IdJornada = MAX(IdJornada)
@@ -31,15 +35,15 @@ AS
 	DECLARE @ConfigPuntosFairPlay AS NUMERIC(2,1) 
 	DECLARE @ConfigPuntosDescontadosFairPlay AS NUMERIC(2,1) 
 	DECLARE @ConfigPuntosDescontadosJunta AS NUMERIC(2,1)
+
 	
+	SET @ConfigPuntosPorJuegoGanado = (SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 3)
+	SET @ConfigPuntosPorJuegoEmpatado = (SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 4)
+	SET @ConfigPuntosPorJuegoPerdido =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 5)
 	
-	SET @ConfigPuntosPorJuegoGanado = (SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 3)
-	SET @ConfigPuntosPorJuegoEmpatado = (SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 4)
-	SET @ConfigPuntosPorJuegoPerdido =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 5)
-	
-	SET @ConfigPuntosFairPlay =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 1)
-	SET @ConfigPuntosDescontadosFairPlay =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 2)
-	SET @ConfigPuntosDescontadosJunta =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdConfiguracion = 6)
+	SET @ConfigPuntosFairPlay =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 1)
+	SET @ConfigPuntosDescontadosFairPlay =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 2)
+	SET @ConfigPuntosDescontadosJunta =(SELECT ValorNumerico FROM dbo.Configuracion WHERE IdLiga = @IdLiga AND IdConfiguracion = 6)
 	
 	
 	
@@ -63,33 +67,33 @@ AS
 			
 			SELECT @PartidosJugados = COUNT(1)
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada <= @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada <= @IdJornada
 
 			SELECT @PartidosGanados = COUNT(1)										
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada <= @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada <= @IdJornada
 			AND ((IdEquipo1 = @IdEquipo AND GolesEquipo1 > GolesEquipo2) OR (IdEquipo2 = @IdEquipo AND GolesEquipo2 > GolesEquipo1))
 		
 			SELECT @PartidosEmpatados = COUNT(1)										
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada <= @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada <= @IdJornada
 			AND   GolesEquipo1 = GolesEquipo2
 			
 			SELECT @PartidosGanadosEnPenales = COUNT(1)										
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND ((IdEquipo1 = @IdEquipo AND GanaEnPenales1 = 1) OR (IdEquipo2 = @IdEquipo AND GanaEnPenales2 = 1)) AND IdJornada <= @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND ((IdEquipo1 = @IdEquipo AND GanaEnPenales1 = 1) OR (IdEquipo2 = @IdEquipo AND GanaEnPenales2 = 1)) AND IdJornada <= @IdJornada
 			AND   GolesEquipo1 = GolesEquipo2
 			
 			
 			SELECT @PartidosPerdidos = COUNT(1)
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada <= @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada <= @IdJornada
 			AND ((IdEquipo1 = @IdEquipo AND GolesEquipo1 < GolesEquipo2) OR (IdEquipo2 = @IdEquipo AND GolesEquipo2 < GolesEquipo1))
 
 				
 			SELECT @GolesFavor = ISNULL(MAX(GolesFavor),0)
 			FROM dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
 			
 			
 			SELECT @GolesFavor = CASE 
@@ -97,13 +101,13 @@ AS
 									WHEN  IdEquipo2 = @IdEquipo THEN @GolesFavor + GolesEquipo2
 								 END
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada = @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada = @IdJornada
 
 			
 			
 			SELECT @GolesContra = ISNULL(MAX(GolesContra),0)
 			FROM dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
 			
 			
 			SELECT @GolesContra = CASE 
@@ -111,7 +115,7 @@ AS
 									WHEN  IdEquipo2 != @IdEquipo THEN @GolesContra + GolesEquipo2
 								 END
 			FROM dbo.JornadaPartido
-			WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada = @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND (IdEquipo1 = @IdEquipo OR IdEquipo2 = @IdEquipo) AND IdJornada = @IdJornada
 
 			
 			SELECT @DiferenciaGoles = @GolesFavor - @GolesContra
@@ -121,11 +125,11 @@ AS
 						
 			SELECT @PuntosFairPlay = ISNULL(MAX(PuntosFairPlay),0)
 			FROM dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
 			
 			IF EXISTS(SELECT 1											    
 					  FROM dbo.JornadaPartido
-					  WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada = @IdJornada
+					  WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada = @IdJornada
 					  AND ((IdEquipo1 = @IdEquipo AND RecibioTarjetaAEquipo1 = 0 AND RecibioTarjetaREquipo1 = 0) OR (IdEquipo2 = @IdEquipo AND RecibioTarjetaAEquipo2 = 0 AND RecibioTarjetaREquipo2 = 0)))
 			BEGIN
 				SELECT @PuntosFairPlay = @PuntosFairPlay + @ConfigPuntosFairPlay
@@ -135,11 +139,11 @@ AS
 			
 			SELECT @PuntosDescontadosFairPlay = ISNULL(MAX(PuntosDescontadosFairPlay),0)
 			FROM dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
 			
 			IF EXISTS(SELECT 1
 					  FROM dbo.JornadaPartido
-					  WHERE IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada = @IdJornada
+					  WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND Jugado = 1 AND IdJornada = @IdJornada
 					  AND ((IdEquipo1 = @IdEquipo AND RecibioTarjetaREquipo1 = 1) OR (IdEquipo2 = @IdEquipo AND RecibioTarjetaREquipo2 = 1)))
 			BEGIN
 				SELECT @PuntosDescontadosFairPlay = @PuntosDescontadosFairPlay + @ConfigPuntosDescontadosFairPlay									    
@@ -148,11 +152,11 @@ AS
 						
 			SELECT @PuntosDescontadosJunta = ISNULL(MAX(PuntosDescontadosJunta),0)
 			FROM dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada < @IdJornada 
 			
 			IF EXISTS(SELECT 1			
 					  FROM dbo.JornadaAsistencia
-					  WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada = @IdJornada AND Asistio = 0)
+					  WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada = @IdJornada AND Asistio = 0)
 			BEGIN
 				SELECT @PuntosDescontadosJunta = @PuntosDescontadosJunta + @ConfigPuntosDescontadosJunta								    
 			END
@@ -164,11 +168,12 @@ AS
 						
 				
 			DELETE dbo.TorneoEquipo
-			WHERE IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada = @IdJornada
+			WHERE IdLiga = @IdLiga AND IdTorneo = @IdTorneo AND IdEquipo = @IdEquipo AND IdJornada = @IdJornada
 				
 			
 				
 			INSERT INTO dbo.TorneoEquipo (
+						IdLiga,
 						IdTorneo,
 						IdEquipo,
 						IdJornada,
@@ -187,7 +192,8 @@ AS
 						NombrePcMod,
 						ClaUsuarioMod
 					) 
-			SELECT  IdTorneo = @IdTorneo,
+			SELECT  IdLiga = @IdLiga,
+					IdTorneo = @IdTorneo,
 					IdEquipo = @IdEquipo,
 					IdJornada = @IdJornada,
 					PartidosJugados = @PartidosJugados,
@@ -201,12 +207,11 @@ AS
 					PuntosFairPlay = @PuntosFairPlay,
 					PuntosDescontadosFairPlay = @PuntosDescontadosFairPlay,
 					PuntosDescontadosJunta = @PuntosDescontadosJunta,
-					FechaUltimaMod = GETDATE(),
+					FechaUltimaMod = dbo.ObtieneFechaActual(),
 					NombrePcMod = HOST_NAME(),
 					ClaUsuarioMod = 0	
 		
 			
-			COMMIT TRANSACTION	
+			COMMIT TRANSACTION
 
-GO
-
+END

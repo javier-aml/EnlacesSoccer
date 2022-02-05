@@ -1,15 +1,12 @@
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 -- =============================================
 -- Author:		Felipe Diaz Acevedo
 -- Create date: 21/09/2011
 -- Description:	Regresa las jornadas de un torneo que ya han sido jugadas
--- JornadasPorTorneoJugadas 1
 -- =============================================
 
-CREATE PROCEDURE JornadasPorTorneoJugadas
+ALTER PROCEDURE JornadasPorTorneoJugadas
+	@pnIdLiga	INT,
 	@nIdTorneo	INT
 AS
 BEGIN
@@ -18,9 +15,9 @@ BEGIN
 	
 	SELECT	IdJornada, 'Jornada '+CONVERT(VARCHAR, IdJornada) Nombre
 	FROM	Jornada
-	WHERE	IdTorneo = @nIdTorneo
+	WHERE	IdLiga =  @pnIdLiga	AND IdTorneo = @nIdTorneo
 	AND		PorJugar = 0
 	ORDER BY IdJornada
 
 END
-GO
+
