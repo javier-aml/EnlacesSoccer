@@ -111,25 +111,25 @@
     Public Sub registrar()
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
-        comm = New SqlClient.SqlCommand("equipoSi")
+        comm = New SqlClient.SqlCommand("GuardarEquipo")
         comm.CommandType = CommandType.StoredProcedure
-        comm.Parameters.AddWithValue("@sNombre", Me.nombre)
-        comm.Parameters.AddWithValue("@nActivo", Me.activo)
-        comm.Parameters.AddWithValue("@sNombrePcMod", Me.nombrePcMod)
-        comm.Parameters.AddWithValue("@nClaUsuarioMod", Me.claUsuarioMod)
+        comm.Parameters.AddWithValue("@psNombre", Me.nombre)
+        comm.Parameters.AddWithValue("@pnActivo", Me.activo)
+        comm.Parameters.AddWithValue("@psNombrePcMod", Me.nombrePcMod)
+        comm.Parameters.AddWithValue("@pnClaUsuarioMod", Me.claUsuarioMod)
         db.ejecutaComandoQuery(comm)
 
     End Sub
     Public Sub actualizar()
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
-        comm = New SqlClient.SqlCommand("equipoSu")
+        comm = New SqlClient.SqlCommand("ActualizarEquipo")
         comm.CommandType = CommandType.StoredProcedure
-        comm.Parameters.AddWithValue("@nIdEquipo", Me.idEquipo)
-        comm.Parameters.AddWithValue("@sNombre", Me.nombre)
-        comm.Parameters.AddWithValue("@nActivo", Me.activo)
-        comm.Parameters.AddWithValue("@sNombrePcMod", Me.nombrePcMod)
-        comm.Parameters.AddWithValue("@nClaUsuarioMod", Me.claUsuarioMod)
+        comm.Parameters.AddWithValue("@pnIdEquipo", Me.idEquipo)
+        comm.Parameters.AddWithValue("@psNombre", Me.nombre)
+        comm.Parameters.AddWithValue("@pnActivo", Me.activo)
+        comm.Parameters.AddWithValue("@psNombrePcMod", Me.nombrePcMod)
+        comm.Parameters.AddWithValue("@pnClaUsuarioMod", Me.claUsuarioMod)
         db.ejecutaComandoQuery(comm)
         db = Nothing
         comm = Nothing
@@ -138,10 +138,10 @@
     Public Function consultar(activo As Integer) As DataTable
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
-        comm = New SqlClient.SqlCommand("ConsultarEquipos")
+        comm = New SqlClient.SqlCommand("BuscarEquipos")
         comm.CommandType = CommandType.StoredProcedure
         'comm.Parameters.AddWithValue("@pnIdLiga", IdLiga)
-        comm.Parameters.AddWithValue("@nActivo", activo)
+        comm.Parameters.AddWithValue("@pnActivo", activo)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing
         comm = Nothing
@@ -153,8 +153,9 @@
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
         Dim renglon As DataRow
-        comm = New SqlClient.SqlCommand(" select * from equipo where IdLiga = 1 AND idEquipo=@cve")
-        comm.Parameters.AddWithValue("@cve", pIdEquipo)
+        comm = New SqlClient.SqlCommand("ConsultarEquipo")
+        comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdEquipo", pIdEquipo)
         renglon = db.ejecutaComandoRenglon(comm, "renglon")
         If IsNothing(renglon) = False Then
             Me.idEquipo = pIdEquipo
