@@ -1,4 +1,5 @@
 ALTER PROCEDURE [dbo].[ActualizaTipoSancion]
+@pnIdLiga	INT=1,
 @idtiposancion as tinyint,
 @clave AS VARCHAR(6),
 @descripcion AS VARCHAR(250),
@@ -13,6 +14,7 @@ AS
        juegossuspension=@juegossuspension, 	   
        causabaja=@causabaja, 	   
 	   ClaUsuarioMod=@idusuario
-   where IdTipoSancion=@IdTipoSancion
+   where IdLiga = @pnIdLiga	AND IdTipoSancion=@IdTipoSancion
 
 GO
+

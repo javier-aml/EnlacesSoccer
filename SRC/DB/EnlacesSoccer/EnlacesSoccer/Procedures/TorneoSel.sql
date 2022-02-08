@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE [dbo].[TorneoSel]
-@pnIdLiga	INT,	
+@pnIdLiga	INT=1,	
 @nIdTorneo	INT
 AS
 BEGIN

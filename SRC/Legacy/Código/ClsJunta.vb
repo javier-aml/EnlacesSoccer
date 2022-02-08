@@ -14,7 +14,7 @@
     Friend Sub Buscar(ByRef LvResultados As ListView, ByVal Cadena As Date)
         LvResultados.Items.Clear()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "BuscarJuntaSel '" & Cadena.ToShortDateString & "'"
+        Conexion.Comando.CommandText = "BuscarJuntaSel 1,'" & Cadena.ToShortDateString & "'"
         SR = Conexion.Comando.ExecuteReader
         Dim Contador As Short
         If SR.HasRows = True Then
@@ -33,7 +33,7 @@
     Friend Sub Ver(ByRef datos As Collection, ByVal idJunta As Integer, ByVal Cadena As Integer)
         datos.Clear()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "BuscarJuntaDetSel " & idJunta & "," & Cadena
+        Conexion.Comando.CommandText = "BuscarJuntaDetSel 1," & idJunta & "," & Cadena
         SR = Conexion.Comando.ExecuteReader
         If SR.HasRows = True Then
             While SR.Read
@@ -53,6 +53,7 @@
             Dim db As New DBTools
             comm = New SqlClient.SqlCommand("GuardarJuntaSI")
             comm.CommandType = CommandType.StoredProcedure
+            comm.Parameters.AddWithValue("@pnIdLiga", 1)
             comm.Parameters.AddWithValue("@psAcuerdos", Me.Acuerdos)
             comm.Parameters.AddWithValue("@psObservaciones", Me.Observaciones)
             comm.Parameters.AddWithValue("@idusuario", Me.IdUsuario)
@@ -79,7 +80,7 @@
     Friend Sub Actualizar()
         Try
             Dim Cadena As String
-            Cadena = "ActualizarJuntaSU " & IdJunta & "," & IdTorneo & ",'" & Acuerdos & "','" & Observaciones & "'," & IdUsuario
+            Cadena = "ActualizarJuntaSU 1," & IdJunta & "," & IdTorneo & ",'" & Acuerdos & "','" & Observaciones & "'," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -91,7 +92,7 @@
         Try
             Erro = ""
             Dim Cadena As String
-            Cadena = "AsistenciaJuntaEquiposSi " & IdTorneo & "," & IdJornada & "," & Equipo & "," & IdJunta & "," & Asistencia
+            Cadena = "AsistenciaJuntaEquiposSi 1," & IdTorneo & "," & IdJornada & "," & Equipo & "," & IdJunta & "," & Asistencia
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -106,6 +107,7 @@
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("Juntas")
         comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdLiga", 1)
         comm.Parameters.AddWithValue("@nIdTorneo", Torneo)
         comm.Parameters.AddWithValue("@nSoloJornada", SoloJunta)
         datos = db.EjecutaCommandoTabla(comm, "DataTable1")

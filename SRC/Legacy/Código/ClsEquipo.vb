@@ -15,6 +15,16 @@
         End Set
     End Property
 
+    Private vIdLiga As Integer
+    Public Property idLiga() As Integer
+        Get
+            Return Me.vIdLiga
+        End Get
+        Set(ByVal value As Integer)
+            Me.vIdLiga = value
+        End Set
+    End Property
+
     Private vNombre As String
     Public Property nombre() As String
         Get
@@ -130,6 +140,7 @@
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("ConsultarEquipos")
         comm.CommandType = CommandType.StoredProcedure
+        'comm.Parameters.AddWithValue("@pnIdLiga", IdLiga)
         comm.Parameters.AddWithValue("@nActivo", activo)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing
@@ -142,7 +153,7 @@
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
         Dim renglon As DataRow
-        comm = New SqlClient.SqlCommand(" select * from equipo where idEquipo=@cve")
+        comm = New SqlClient.SqlCommand(" select * from equipo where IdLiga = 1 AND idEquipo=@cve")
         comm.Parameters.AddWithValue("@cve", pIdEquipo)
         renglon = db.ejecutaComandoRenglon(comm, "renglon")
         If IsNothing(renglon) = False Then
@@ -162,7 +173,7 @@
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
         Dim renglon As DataRow
-        comm = New SqlClient.SqlCommand(" select * from equipo where Nombre=@nombre ")
+        comm = New SqlClient.SqlCommand(" select * from equipo where IdLiga = 1 AND Nombre=@nombre ")
         comm.Parameters.AddWithValue("@nombre", nombre)
         renglon = db.ejecutaComandoRenglon(comm, "renglon")
         If IsNothing(renglon) = False Then
@@ -242,7 +253,7 @@
         Dim comm As SqlClient.SqlCommand
         Dim db As New DBTools
         Dim renglon As DataRow
-        comm = New SqlClient.SqlCommand("SELECT TOP 1 1 from JornadaPartido  JP JOIN dbo.Torneo	 T ON  JP.IdTorneo = t.IdTorneo where T.Activo = 1 And (JP.IdEquipo1 = @idEquipo Or JP.IdEquipo2 = @idEquipo)")
+        comm = New SqlClient.SqlCommand("SELECT TOP 1 1 from JornadaPartido  JP JOIN dbo.Torneo	 T ON  JP.IdLiga = t.IdLiga AND JP.IdTorneo = t.IdTorneo where jp.IdLiga = 1 AND T.Activo = 1 And (JP.IdEquipo1 = @idEquipo Or JP.IdEquipo2 = @idEquipo)")
         comm.Parameters.AddWithValue("@idEquipo", idEquipo)
         renglon = db.ejecutaComandoRenglon(comm, "renglon")
         If IsNothing(renglon) = False Then

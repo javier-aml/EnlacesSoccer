@@ -2,7 +2,7 @@
 --EXEC ValidarInformacionHistorica @pnIdLiga = 1, @IdTorneo = 5, @IdEquipo = 54
 
 ALTER PROCEDURE ValidarInformacionHistorica
-	@pnIdLiga		INT,
+	@pnIdLiga		INT=1,
 	@IdTorneo		TINYINT,
 	@IdEquipo		INT
 AS

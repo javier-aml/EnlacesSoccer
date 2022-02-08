@@ -1,5 +1,6 @@
 
-CREATE PROCEDURE [dbo].[BuscaJugador]
+ALTER PROCEDURE [dbo].[BuscaJugador]
+@pnIdLiga	INT=1,
 @nombre as varchar(50)
 AS
 
@@ -13,7 +14,7 @@ AS
 		  NombrePcMod,
 		  ClaUsuarioMod
    from dbo.Jugador 
-   where Nombre like '%' + @nombre + '%' 
+   where IdLiga = @pnIdLiga	AND Nombre like '%' + @nombre + '%' 
    order by Nombre
 
 

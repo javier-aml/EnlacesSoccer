@@ -7,6 +7,7 @@ go
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE equipoSu
+	@pnIdLiga		INT=1,
 	@nIdEquipo		INT,
 	@sNombre		varchar(100),
 	@nActivo		tinyInt,
@@ -30,7 +31,7 @@ BEGIN
       ,FechaUltimaMod	= @tFechaActual
       ,NombrePcMod		= @sNombrePcMod
       ,ClaUsuarioMod	= @nClaUsuarioMod
-	WHERE idequipo		= @nIdEquipo
+	WHERE IdLiga = @pnIdLiga AND idequipo = @nIdEquipo
 
 
 END

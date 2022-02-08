@@ -9,7 +9,7 @@ GO
 -- Description:	Guarda un nuevo arbitro
 -- =============================================
 ALTER PROCEDURE GuardarArbitroSI
-	@pnIdLiga INT,
+	@pnIdLiga INT=1,
 	@snombre as varchar(50),
 	@idusuario as tinyint
 AS

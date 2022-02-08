@@ -1,4 +1,5 @@
 ALTER PROCEDURE [dbo].[BuscaConfiguracion]
+@pnIdLiga	INT=1,
 @descripcion as varchar(250)
 AS
 
@@ -15,7 +16,7 @@ AS
 					 ELSE 'Baja'
 				   END		
    from dbo.Configuracion 
-   where Descripcion like '%' + @Descripcion + '%' 
+   where IdLiga = @pnIdLiga	AND Descripcion like '%' + @Descripcion + '%' 
    order by Descripcion
 
 

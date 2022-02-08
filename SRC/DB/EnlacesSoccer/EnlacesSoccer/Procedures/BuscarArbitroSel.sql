@@ -4,6 +4,7 @@
 -- Description:	Buscar los arbitros que existan
 -- =============================================
 ALTER PROCEDURE BuscarArbitroSel
+	@pnIdLiga	INT=1,
 	@snombre as varchar(50)
 AS
 BEGIN
@@ -20,7 +21,7 @@ SET NOCOUNT ON
 				NombrePcMod,			
 				ClaUsuarioMod
 	FROM		dbo.Arbitro
-	WHERE		Nombre LIKE '%' + @snombre + '%' 	
+	WHERE	IdLiga = @pnIdLiga AND Nombre LIKE '%' + @snombre + '%' 	
 	ORDER BY	Nombre
 	
 SET NOCOUNT OFF

@@ -6,7 +6,7 @@
 --exec jugadoresEquipoSel @pnIdLiga = 1, @nIdTorneo = 2, @nIdJornada = 2, @nIdEquipo1 = 1, @nIdEquipo2 = 6
 -- =============================================
 ALTER PROCEDURE [dbo].[jugadoresEquipoSel]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	TINYINT,
 	@nIdJornada	TINYINT,
 	@nIdEquipo1	TINYINT,

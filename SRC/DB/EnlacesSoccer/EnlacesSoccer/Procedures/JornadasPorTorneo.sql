@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE JornadasPorTorneo
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT
 AS
 BEGIN

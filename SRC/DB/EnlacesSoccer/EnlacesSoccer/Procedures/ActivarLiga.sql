@@ -1,6 +1,6 @@
 
-CREATE PROCEDURE [dbo].[ActivarLiga]
-@nIdLiga as int,
+ALTER PROCEDURE [dbo].[ActivarLiga]
+@nIdLiga as int=1,
 @dFechaUltimaMod as smalldatetime = getdate,
 @sNombrePcMod as varchar(50) = host_name,
 @nClaUsuarioMod as tinyint = 0

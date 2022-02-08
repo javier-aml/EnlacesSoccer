@@ -8,9 +8,9 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-
-CREATE PROCEDURE ConsultarEquipos
-	@nActivo		int
+ALTER PROCEDURE ConsultarEquipos
+@pnIdLiga int = 1,
+@nActivo  int
 AS
 BEGIN
 
@@ -23,10 +23,11 @@ BEGIN
 		  ,case Activo when 1 then 'Activo' else 'Inactivo' END as Estado
 	  
 	FROM	Equipo
-	WHERE ((@nActivo = -1) OR Activo = @nActivo)
+	WHERE IdLiga = @pnIdLiga AND ((@nActivo = -1) OR Activo = @nActivo)
 		AND IdEquipo != 0
 	ORDER BY estado , [Nombre equipo] 
 
 END
 GO
-EXEC ConsultarEquipos -1
+EXEC ConsultarEquipos @pnIdLiga = 1, @nActivo = -1
+GO

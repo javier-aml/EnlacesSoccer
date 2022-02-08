@@ -3,7 +3,7 @@
 --EXEC dbo.ObtenerInformacionTorneo @pnIdLiga = 1, @IdTorneo = 5
 
 ALTER PROCEDURE dbo.ObtenerInformacionTorneo
-	@pnIdLiga	   INT,
+	@pnIdLiga	   INT=1,
 	@IdTorneo		int
 AS
 BEGIN

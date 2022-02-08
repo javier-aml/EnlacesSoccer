@@ -8,7 +8,8 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 
-CREATE PROCEDURE ConsultarArbitros
+ALTER PROCEDURE ConsultarArbitros
+	@pnIdLiga	INT=1,
 	@nActivo		int
 AS
 BEGIN
@@ -17,7 +18,7 @@ BEGIN
 	SELECT IdArbitro
 		  ,Nombre
 	FROM	Arbitro
-	WHERE (@nActivo = -1) OR Activo = @nActivo
+	WHERE IdLiga = @pnIdLiga AND (@nActivo = -1) OR Activo = @nActivo
 	ORDER BY Nombre 
 
 END

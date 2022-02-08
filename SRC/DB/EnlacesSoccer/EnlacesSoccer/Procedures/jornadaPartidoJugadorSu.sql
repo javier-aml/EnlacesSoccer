@@ -5,7 +5,7 @@
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE jornadaPartidoJugadorSu
-	@pnIdLiga					INT,
+	@pnIdLiga					INT=1,
 	@nIdTorneo					TINYINT,
 	@nIdJornada					TINYINT,
 	@nIdEquipo					TINYINT,

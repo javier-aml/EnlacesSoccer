@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE DameTorneoActivo
-@pnIdLiga		INT
+@pnIdLiga		INT=1
 AS
 BEGIN
 

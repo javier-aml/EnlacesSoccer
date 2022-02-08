@@ -25,6 +25,7 @@ Public Class ClsJugador
             Dim db As New DBTools
             comm = New SqlClient.SqlCommand("GuardaJugador")
             comm.CommandType = CommandType.StoredProcedure
+            comm.Parameters.AddWithValue("@pnIdLiga", 1)
             comm.Parameters.AddWithValue("@nombre", Me.Nombre)
             comm.Parameters.AddWithValue("@idusuario", Me.IdUsuario)
             comm.Parameters.AddWithValue("@NumeroNomina", Me.NumeroNomina)
@@ -60,6 +61,7 @@ Public Class ClsJugador
             Dim db As New DBTools
             comm = New SqlClient.SqlCommand("ActualizaJugador")
             comm.CommandType = CommandType.StoredProcedure
+            comm.Parameters.AddWithValue("@pnIdLiga", 1)
             comm.Parameters.AddWithValue("@idjugador", Me.IdJugador)
             comm.Parameters.AddWithValue("@nombre", Me.Nombre)
             comm.Parameters.AddWithValue("@idusuario", Me.IdUsuario)
@@ -92,7 +94,7 @@ Public Class ClsJugador
     Friend Sub Eliminar()
         Try
             Dim Cadena As String
-            Cadena = "EliminaJugador " & IdJugador & "," & IdUsuario
+            Cadena = "EliminaJugador 1," & IdJugador & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -103,7 +105,7 @@ Public Class ClsJugador
     Friend Sub Activar()
         Try
             Dim Cadena As String
-            Cadena = "ActivarJugador " & IdJugador & "," & IdUsuario
+            Cadena = "ActivarJugador 1," & IdJugador & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -137,6 +139,7 @@ Public Class ClsJugador
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("BuscaJugador")
         comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdLiga", 1)
         comm.Parameters.AddWithValue("@nombre", Cadena)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing
@@ -151,7 +154,7 @@ Public Class ClsJugador
         Dim stream As MemoryStream = Nothing
 
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneJugador " & IdJugador
+        Conexion.Comando.CommandText = "ObtieneJugador 1," & IdJugador
         SR = Conexion.Comando.ExecuteReader
         Limpiar()
         If SR.HasRows = True Then
@@ -206,7 +209,7 @@ Public Class ClsJugador
 
     Friend Sub CargaCombo(ByRef Combo As ComboBox, Optional ByVal AgregarTodos As Boolean = False)
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneJugadores "
+        Conexion.Comando.CommandText = "ObtieneJugadores 1"
         SR = Conexion.Comando.ExecuteReader
         If SR.HasRows = True Then
             Ids.Clear()

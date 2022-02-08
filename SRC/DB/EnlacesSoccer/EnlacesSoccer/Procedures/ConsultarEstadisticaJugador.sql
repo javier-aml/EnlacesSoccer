@@ -12,7 +12,7 @@ select * from equipo where idequipo=12
 select * from jornadapartidojugador where idjugador = 48
 */
 ALTER PROCEDURE ConsultarEstadisticaJugador
-	@IdLiga	        INT,
+	@IdLiga	        INT=1,
 	@pnIdTorneo		int,
 	@pnIdEquipo		int = 0
 AS

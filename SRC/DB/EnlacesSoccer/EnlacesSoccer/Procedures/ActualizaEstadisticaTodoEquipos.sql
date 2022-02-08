@@ -2,7 +2,7 @@
 
 -- ActualizaEstadisticaTodoEquipos 2
 ALTER PROCEDURE [dbo].[ActualizaEstadisticaTodoEquipos]
-	@IdLiga	    INT,
+	@IdLiga	    INT=1,
 	@idTorneo	tinyint
 as
 BEGIN

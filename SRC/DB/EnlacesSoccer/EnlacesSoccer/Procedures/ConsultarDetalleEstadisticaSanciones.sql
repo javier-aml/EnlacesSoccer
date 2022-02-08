@@ -7,7 +7,7 @@
 -- =============================================
 
 ALTER PROCEDURE ConsultarDetalleEstadisticaSanciones
-	@IdLiga	        INT,
+	@IdLiga	        INT=1,
 	@pnIdTorneo		INT,
 	@pnIdJornada	INT,
 	@pnIdEquipo		INT,

@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE EliminarJugadoresEquipo
-	@pnIdLiga	    INT,
+	@pnIdLiga	    INT=1,
 	@nIdTorneo		INT,
 	@nIdEquipo		INT
 AS

@@ -9,7 +9,7 @@ exec PartidosPorJornadaPorTorneo2 1,4
 -- =============================================
 
 ALTER PROCEDURE [dbo].[PartidosPorJornadaPorTorneo2]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS

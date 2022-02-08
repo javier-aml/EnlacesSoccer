@@ -2,7 +2,7 @@
 
 --EXEC [dbo].[ObtieneJugadoresCedula] @pnIdLiga = 1, @IdTorneo = 5, @IdEquipo = 54
 ALTER PROCEDURE [dbo].[ObtieneJugadoresCedula]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@IdTorneo	TINYINT,	
 	@IdEquipo	TINYINT	
 AS

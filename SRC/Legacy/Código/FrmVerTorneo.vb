@@ -179,13 +179,15 @@
         Dim fechaJuego As Date
         Dim flagGuardar As Boolean
         flagGuardar = False
-        flag = validarHorario()
+        'flag = validarHorario()
+        flag = 1
 
         If flag Then
             For Each row As DataGridViewRow In DataGridView1.Rows
                 If (Convert.ToBoolean(row.Cells("Jugado").Value) = False) And (Convert.ToBoolean(row.Cells("Programado").Value) = True) Then
                     Fecha = row.Cells("Fecha").Value.ToString().Substring(0, 10) + " " + row.Cells("Hora").Value.ToString().Substring(11, 13)
-                    fechaJuego = Convert.ToDateTime(Fecha)
+                    'fechaJuego = Convert.ToDateTime(Fecha)
+                    fechaJuego = fecha
                     jornadaPartido = New JornadaPartido
                     jornadaPartido.fechaHora = fechaJuego
                     jornadaPartido.programado = Convert.ToBoolean(row.Cells("Programado").Value)

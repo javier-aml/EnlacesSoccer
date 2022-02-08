@@ -1,5 +1,5 @@
 ALTER PROCEDURE [dbo].[GuardaTipoSancion]
-@pnIdLiga INT,
+@pnIdLiga INT=1,
 @clave AS VARCHAR(6),
 @descripcion AS VARCHAR(250),
 @juegossuspension tinyint,

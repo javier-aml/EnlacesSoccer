@@ -9,7 +9,7 @@ exec AsistenciaJuntaEquiposSi 2,1,2,0
 */
 -- =============================================
 ALTER PROCEDURE AsistenciaJuntaEquiposSi
-	@IdLiga	        INT,
+	@IdLiga	        INT=1,
 	@pnIdTorneo		int,
 	@pnIdJornada	int,
 	@pnIdEquipo		int,

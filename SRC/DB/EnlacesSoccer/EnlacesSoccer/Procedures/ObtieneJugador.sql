@@ -1,7 +1,8 @@
-CREATE PROCEDURE [dbo].[ObtieneJugador]
+ALTER PROCEDURE [dbo].[ObtieneJugador]
+@pnIdLiga	INT=1,
 @idjugador as smallint
 AS
 
-   select Nombre,NumeroNomina,Fotografia
+    select IdJugador, Nombre, NumeroNomina, NumeroCamisa, Fotografia, Planta,Contratista, Area, NumeroCamisa
    from jugador
-   where idjugador=@idjugador
+   where IdLiga = @pnIdLiga AND idjugador=@idjugador

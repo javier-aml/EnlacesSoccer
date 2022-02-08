@@ -6,7 +6,7 @@
 -- =============================================
 --EXEC PartidosJugadosPorJornadaPorTorneo @pnIdLiga = 1, @nIdTorneo = 5, @nIdJornada = 1
 ALTER PROCEDURE [dbo].[PartidosJugadosPorJornadaPorTorneo]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS

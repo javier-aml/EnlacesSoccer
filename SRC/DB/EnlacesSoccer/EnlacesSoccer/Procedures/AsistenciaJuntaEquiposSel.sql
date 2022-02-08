@@ -9,7 +9,7 @@ exec AsistenciaJuntaEquiposSel 1
 */
 -- =============================================
 ALTER PROCEDURE AsistenciaJuntaEquiposSel
-	@IdLiga	    INT,
+	@IdLiga	    INT=1,
 	@pnIdTorneo as int,
 	@pnIdJornada as int 
 	

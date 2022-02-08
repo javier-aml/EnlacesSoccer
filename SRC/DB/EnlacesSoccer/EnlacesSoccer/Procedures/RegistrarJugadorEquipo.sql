@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE RegistrarJugadorEquipo
-	@pnIdLiga		INT,
+	@pnIdLiga		INT=1,
 	@nIdTorneo		INT,
 	@nIdEquipo		INT,
 	@nIdJugador		INT,

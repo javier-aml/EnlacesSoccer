@@ -6,7 +6,7 @@
 -- =============================================
 
 ALTER PROCEDURE [dbo].[SancionSd]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	TINYINT,
 	@nIdJornada	TINYINT,
 	@nIdEquipo	TINYINT,

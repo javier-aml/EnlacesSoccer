@@ -4,9 +4,9 @@
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
---EXEC ConsultarJugadoresDisponibles 1
+--EXEC ConsultarJugadoresDisponibles @pnIdLiga = 1, @nIdTorneo = 5
 ALTER PROCEDURE dbo.ConsultarJugadoresDisponibles
-	@pnIdLiga		INT,
+	@pnIdLiga		INT=1,
 	@nIdTorneo		INT
 AS
 BEGIN

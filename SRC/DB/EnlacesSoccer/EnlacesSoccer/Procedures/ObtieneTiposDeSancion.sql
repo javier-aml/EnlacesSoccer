@@ -1,9 +1,10 @@
 
-CREATE PROCEDURE [dbo].[ObtieneTiposDeSancion]
+ALTER PROCEDURE [dbo].[ObtieneTiposDeSancion]
+@pnIdLiga	INT=1
 AS
 
    select IdTipoSancion, Clave, Descripcion
    from dbo.TipoSancion
-   where activa = 1 
+   where IdLiga = @pnIdLiga AND activa = 1 
    order by Descripcion
 GO

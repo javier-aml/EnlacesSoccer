@@ -24,7 +24,7 @@
 
             Cadena = ""
 
-            Cadena = "GuardaConfiguracion '" & Descripcion & "'," & IIf(GuardaNumerico = True, ValorNumerico, "NULL") & ",'" & ValorAlfanumerico & "'," & IIf(GuardaFecha = True, "'" + FechaHora(ValorFecha) + "'", "NULL") & "," & IdUsuario
+            Cadena = "GuardaConfiguracion 1,'" & Descripcion & "'," & IIf(GuardaNumerico = True, ValorNumerico, "NULL") & ",'" & ValorAlfanumerico & "'," & IIf(GuardaFecha = True, "'" + FechaHora(ValorFecha) + "'", "NULL") & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -42,7 +42,7 @@
 
             Cadena = ""
 
-            Cadena = "ActualizaConfiguracion " & IdConfiguracion & ",'" & Descripcion & "'," & IIf(GuardaNumerico = True, ValorNumerico, "NULL") & ",'" & ValorAlfanumerico & "'," & IIf(GuardaFecha = True, "'" + FechaHora(ValorFecha) + "'", "NULL") & "," & IdUsuario
+            Cadena = "ActualizaConfiguracion 1," & IdConfiguracion & ",'" & Descripcion & "'," & IIf(GuardaNumerico = True, ValorNumerico, "NULL") & ",'" & ValorAlfanumerico & "'," & IIf(GuardaFecha = True, "'" + FechaHora(ValorFecha) + "'", "NULL") & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -53,7 +53,7 @@
     Friend Sub Eliminar()
         Try
             Dim Cadena As String
-            Cadena = "EliminaConfiguracion " & IdConfiguracion & "," & IdUsuario
+            Cadena = "EliminaConfiguracion 1," & IdConfiguracion & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -64,7 +64,7 @@
     Friend Sub Activar()
         Try
             Dim Cadena As String
-            Cadena = "ActivarConfiguracion " & IdConfiguracion & "," & IdUsuario
+            Cadena = "ActivarConfiguracion 1," & IdConfiguracion & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -106,7 +106,7 @@
 
     Friend Sub ObtieneInformacion()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneConfiguracion " & IdConfiguracion
+        Conexion.Comando.CommandText = "ObtieneConfiguracion 1, " & IdConfiguracion
         SR = Conexion.Comando.ExecuteReader
         Limpiar()
         If SR.HasRows = True Then

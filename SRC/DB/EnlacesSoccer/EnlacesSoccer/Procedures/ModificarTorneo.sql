@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ALTER PROCEDURE [dbo].[ModificarTorneo]
-	@pnIdLiga		 INT,
+	@pnIdLiga		 INT=1,
 	@IdTorneo		 TINYINT,
 	@Nombre		     VARCHAR (100),
 	@Activo			 BIT
@@ -16,6 +16,12 @@ SET NOCOUNT ON;
 		
 	SELECT @NombrePcMod = HOST_NAME()
 	SELECT @ClaUsuarioMod = 1	
+
+	IF EXISTS (SELECT 1 FROM Torneo WHERE Idliga = @pnIdLiga AND IdTorneo <> @IdTorneo AND Nombre = @Nombre)
+	BEGIN
+		RAISERROR('Ya existe un Torneo con el mismo nombre en esta liga, favor de verificar', 16, 1)
+		RETURN
+	END
 										
 	UPDATE Torneo
 	SET    Nombre         = @Nombre,

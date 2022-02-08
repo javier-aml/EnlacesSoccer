@@ -9,7 +9,7 @@
     Friend Sub Buscar(ByRef LvResultados As ListView, ByVal Cadena As String)
         LvResultados.Items.Clear()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "BuscarArbitroSel '" & Cadena & "'"
+        Conexion.Comando.CommandText = "BuscarArbitroSel 1,'" & Cadena & "'"
         SR = Conexion.Comando.ExecuteReader
         Dim Contador As Short
         If SR.HasRows = True Then
@@ -28,7 +28,7 @@
     Friend Sub Guardar()
         Try
             Dim Cadena As String
-            Cadena = "GuardarArbitroSI '" & Nombre & "'," & IdUsuario
+            Cadena = "GuardarArbitroSI 1,'" & Nombre & "'," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -40,7 +40,7 @@
         Try
             Dim Cadena As String
             Telefono = 1
-            Cadena = "ActualizarArbitroSU " & IdArbitro & ",'" & Nombre & "'," & Telefono & "," & IdUsuario
+            Cadena = "ActualizarArbitroSU 1," & IdArbitro & ",'" & Nombre & "'," & Telefono & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -50,7 +50,7 @@
 
     Friend Sub ObtieneInformacion()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneArbitroSel " & IdArbitro
+        Conexion.Comando.CommandText = "ObtieneArbitroSel 1," & IdArbitro
         SR = Conexion.Comando.ExecuteReader
         Limpiar()
         If SR.HasRows = True Then
@@ -64,7 +64,7 @@
     Friend Sub Eliminar()
         Try
             Dim Cadena As String
-            Cadena = "EliminarArbitroSD " & IdArbitro
+            Cadena = "EliminarArbitroSD 1," & IdArbitro
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -76,7 +76,7 @@
     Friend Sub Activar()
         Try
             Dim Cadena As String
-            Cadena = "ActivarArbitro " & IdArbitro & "," & IdUsuario
+            Cadena = "ActivarArbitro 1," & IdArbitro & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -89,6 +89,7 @@
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("ConsultarArbitros")
         comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdLiga", 1)
         comm.Parameters.AddWithValue("@nActivo", Me.Activo)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing

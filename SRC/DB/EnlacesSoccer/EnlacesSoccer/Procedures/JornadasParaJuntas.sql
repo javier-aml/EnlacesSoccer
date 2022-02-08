@@ -11,7 +11,7 @@
 -- =============================================
 
 ALTER PROCEDURE JornadasParaJuntas
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT,
 	@nIdJornada	INT
 AS

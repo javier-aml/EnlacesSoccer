@@ -4,8 +4,9 @@
 -- Create date: 01/09/2011
 -- Description:	Elimina un arbitro
 -- =============================================
-CREATE PROCEDURE EliminarArbitroSD
-	@nIdArbitro as int
+ALTER PROCEDURE EliminarArbitroSD
+@pnIdLiga	INT=1,
+@nIdArbitro as int
 AS
 BEGIN
 SET NOCOUNT ON
@@ -18,11 +19,11 @@ SET NOCOUNT ON
 
 	IF  EXISTS	(SELECT 1
 				FROM	dbo.Arbitro
-				WHERE	IdArbitro = @nIdArbitro)
+				WHERE	IdLiga = @pnIdLiga AND IdArbitro = @nIdArbitro)
 	BEGIN
 				UPDATE dbo.Arbitro
 				SET    Activo = 0
-				WHERE  IdArbitro = @nIdArbitro
+				WHERE  IdLiga = @pnIdLiga AND IdArbitro = @nIdArbitro
 	END
 
 SET NOCOUNT OFF

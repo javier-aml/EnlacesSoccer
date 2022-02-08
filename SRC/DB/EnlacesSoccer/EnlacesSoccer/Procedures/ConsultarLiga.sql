@@ -1,6 +1,6 @@
 
 ALTER PROCEDURE dbo.ConsultarLiga
-	@nIdLiga int
+	@nIdLiga int=1
 AS
 BEGIN
 

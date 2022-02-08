@@ -6,7 +6,7 @@
 -- =============================================
 --ConsultarEstadisticaSanciones 1
 ALTER PROCEDURE ConsultarEstadisticaSanciones
-	@pnIdLiga		INT,
+	@pnIdLiga		INT=1,
 	@pnIdTorneo		INT--,
 	--@pnIdJornada	INT
 AS

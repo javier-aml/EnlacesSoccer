@@ -7,7 +7,7 @@
 -- =============================================
 --ALTER PROCEDURE dbo.ActualizarJuntaSU
 ALTER PROCEDURE dbo.ActualizarJuntaSU
-	@IdLiga	    INT,
+	@IdLiga	    INT=1,
 	@pnIdJunta	smallint,
 	@pnIdTorneo	tinyint,
 	@psAcuerdos	varchar(500),

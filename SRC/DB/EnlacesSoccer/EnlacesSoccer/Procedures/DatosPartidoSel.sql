@@ -5,7 +5,7 @@
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE [dbo].[DatosPartidoSel]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT,
 	@nIdJornada	INT,
 	@nIdEquipo1	INT,

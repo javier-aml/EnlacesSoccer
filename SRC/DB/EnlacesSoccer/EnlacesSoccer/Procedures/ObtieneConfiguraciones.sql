@@ -1,7 +1,8 @@
-CREATE PROCEDURE [dbo].[ObtieneConfiguraciones]
+ALTER PROCEDURE [dbo].[ObtieneConfiguraciones]
+@pnIdLiga	INT=1
 AS
 
    select IdConfiguracion, Descripcion
    from dbo.Configuracion
-   where Activa = 1
+   where IdLiga = @pnIdLiga AND Activa = 1
 GO

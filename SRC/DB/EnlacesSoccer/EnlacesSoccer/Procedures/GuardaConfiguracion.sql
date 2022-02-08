@@ -1,7 +1,7 @@
 
 
 ALTER PROCEDURE [dbo].[GuardaConfiguracion]
-@pnIdLiga INT,
+@pnIdLiga INT=1,
 @descripcion AS VARCHAR(250),
 @ValorNumerico AS NUMERIC(10,2),
 @ValorAlfanumerico AS VARCHAR(250),

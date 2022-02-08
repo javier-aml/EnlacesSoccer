@@ -7,7 +7,7 @@
 -- =============================================
 
 ALTER PROCEDURE [dbo].[PartidosPedientesReporte]
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@nIdTorneo	INT,
 	@nIdJornada	INT,
 	@nParaJunta	BIT

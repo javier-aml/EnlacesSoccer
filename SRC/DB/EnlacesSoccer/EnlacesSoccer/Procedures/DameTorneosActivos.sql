@@ -8,7 +8,7 @@
 --exec dbo.DameTorneosActivos @pnIdLiga = 1, @Activo = 1
 
 ALTER PROCEDURE dbo.DameTorneosActivos
-@pnIdLiga	INT,
+@pnIdLiga	INT=1,
 @Activo BIT = 1
 
 AS

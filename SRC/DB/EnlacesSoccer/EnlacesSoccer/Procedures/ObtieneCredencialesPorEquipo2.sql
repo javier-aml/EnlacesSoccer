@@ -2,7 +2,7 @@
 --EXEC [dbo].[ObtieneCredencialesPorEquipo2] @pnIdLiga = 1, @IdTorneo = 5, @IdEquipo = 54
 --SELECT * FROM TorneoEquipoJugador WHERE IdLiga = 1 and IdTorneo = 5
 ALTER PROCEDURE [dbo].[ObtieneCredencialesPorEquipo2]
-@pnIdLiga	INT,
+@pnIdLiga	INT=1,
 @IdTorneo as smallint,
 @IdEquipo as smallint
 AS

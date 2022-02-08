@@ -6,7 +6,7 @@
 -- =============================================
 --ALTER PROCEDURE GuardarJuntaSI
 ALTER PROCEDURE dbo.GuardarJuntaSI
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@psAcuerdos VARCHAR(500),
 	@psObservaciones VARCHAR(500),
 	@idusuario as tinyint,

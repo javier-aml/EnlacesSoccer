@@ -2,7 +2,7 @@
 
 -- ConsultarEstadisticaJugadorRPT 2, 0
 ALTER PROCEDURE ConsultarEstadisticaJugadorRPT
-	@pnIdLiga	     INT,
+	@pnIdLiga	     INT=1,
 	@pnIdTorneo  int,
 	@pnIdEquipo  int
 as

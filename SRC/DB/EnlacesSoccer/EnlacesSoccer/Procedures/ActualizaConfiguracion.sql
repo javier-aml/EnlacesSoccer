@@ -1,6 +1,7 @@
 
 
-CREATE PROCEDURE [dbo].[ActualizaConfiguracion]
+ALTER PROCEDURE [dbo].[ActualizaConfiguracion]
+@pnIdLiga	INT=1,
 @IdConfiguracion TINYINT,
 @descripcion AS VARCHAR(250),
 @ValorNumerico AS NUMERIC(10,2),
@@ -16,6 +17,6 @@ AS
        ValorAlfanumerico = @ValorAlfanumerico, 	   
        ValorFecha	     = @ValorFecha, 	   
 	   ClaUsuarioMod	 = @idusuario
-   WHERE IdConfiguracion = @IdConfiguracion
+   WHERE IdLiga = @pnIdLiga	AND IdConfiguracion = @IdConfiguracion
 
 GO

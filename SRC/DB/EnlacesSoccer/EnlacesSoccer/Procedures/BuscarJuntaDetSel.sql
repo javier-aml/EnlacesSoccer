@@ -7,7 +7,7 @@
 -- =============================================
 --ALTER PROCEDURE BuscarJuntaDetSel
 ALTER PROCEDURE BuscarJuntaDetSel 
-	@IdLiga	        INT,
+	@IdLiga	        INT=1,
 	@pnIdJunta		int,
 	@pnIdTorneo		int
 AS

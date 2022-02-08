@@ -1,4 +1,4 @@
-USE [TorneoDEACERO]
+USE EnlacesSoccer
 GO
 /****** Object:  StoredProcedure [dbo].[ConsultarEquipos]    Script Date: 09/02/2011 17:57:11 ******/
 SET ANSI_NULLS ON
@@ -11,7 +11,8 @@ GO
 -- Description:	<Description,,>
 -- =============================================
 
-CREATE PROCEDURE RegistrarJugadorEquipo
+ALTER PROCEDURE RegistrarJugadorEquipo
+	@pnIdLiga		INT=1,
 	@nIdTorneo		INT,
 	@nIdEquipo		INT,
 	@nIdJugador		INT,
@@ -27,7 +28,8 @@ BEGIN
 	DECLARE @nFechaActual		DATETIME		SET @nFechaActual = GETDATE()
 
 	INSERT INTO TorneoEquipoJugador
-           (IdTorneo
+           (IdLiga
+		   ,IdTorneo
            ,IdEquipo
            ,IdJugador
            ,PartidosJugados
@@ -39,7 +41,8 @@ BEGIN
            ,ClaUsuarioMod
            ,NumeroJugador)
      SELECT 
-           IdTorneo						= @nIdTorneo
+			IdLiga						= @pnIdLiga
+           ,IdTorneo					= @nIdTorneo
            ,IdEquipo					= @nIdEquipo
            ,IdJugador					= @nIdJugador
            ,PartidosJugados				= 0

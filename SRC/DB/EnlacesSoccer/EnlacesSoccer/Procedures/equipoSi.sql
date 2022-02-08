@@ -8,7 +8,8 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE equipoSi
+ALTER PROCEDURE equipoSi
+	@pnIdLiga		INT=1,
 	@sNombre		varchar(100),
 	@nActivo		tinyInt,
 	@sNombrePcMod	varchar(50),
@@ -28,13 +29,15 @@ BEGIN
 							
 										
 	INSERT INTO Equipo
-           (IdEquipo
+           (IdLiga
+		   ,IdEquipo
            ,Nombre
            ,Activo
            ,FechaUltimaMod
            ,NombrePcMod
            ,ClaUsuarioMod)
-	SELECT IdEquipo			= @nId
+	SELECT  IdLiga			= @pnIdLiga
+		   ,IdEquipo		= @nId
            ,Nombre			= @sNombre
            ,Activo			= @nActivo
            ,FechaUltimaMod	= @tFechaActual

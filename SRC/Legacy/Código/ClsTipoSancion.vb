@@ -17,7 +17,7 @@
     Friend Sub Guardar()
         Try
             Dim Cadena As String
-            Cadena = "GuardaTipoSancion '" & Clave & "','" & Descripcion & "'," & JuegosSuspension & "," & CausaBaja & "," & IdUsuario
+            Cadena = "GuardaTipoSancion 1,'" & Clave & "','" & Descripcion & "'," & JuegosSuspension & "," & CausaBaja & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -28,7 +28,7 @@
     Friend Sub Actualizar()
         Try
             Dim Cadena As String
-            Cadena = "ActualizaTipoSancion " & IdTipoSancion & ",'" & Clave & "','" & Descripcion & "'," & JuegosSuspension & CausaBaja & "," & IdUsuario
+            Cadena = "ActualizaTipoSancion 1," & IdTipoSancion & ",'" & Clave & "','" & Descripcion & "'," & JuegosSuspension & "," & CausaBaja & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -39,7 +39,7 @@
     Friend Sub Eliminar()
         Try
             Dim Cadena As String
-            Cadena = "EliminaTipoSancion " & IdTipoSancion & "," & IdUsuario
+            Cadena = "EliminaTipoSancion 1," & IdTipoSancion & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -50,7 +50,7 @@
     Friend Sub Activar()
         Try
             Dim Cadena As String
-            Cadena = "ActivarTipoSancion " & IdTipoSancion & "," & IdUsuario
+            Cadena = "ActivarTipoSancion 1," & IdTipoSancion & "," & IdUsuario
             Conexion.Comando.CommandText = Cadena
             Conexion.Comando.ExecuteNonQuery()
         Catch
@@ -61,7 +61,7 @@
 
     Friend Sub Buscar(ByRef LvResultados As ListView, ByVal Cadena As String)
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "BuscaTipoSancion '" & Cadena & "'"
+        Conexion.Comando.CommandText = "BuscaTipoSancion 1,'" & Cadena & "'"
         SR = Conexion.Comando.ExecuteReader
         LvResultados.Items.Clear()
         Dim Contador As Short
@@ -86,6 +86,7 @@
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("BuscaTipoSancion")
         comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdLiga", 1)
         comm.Parameters.AddWithValue("@descripcion", Me.Descripcion)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing
@@ -98,6 +99,7 @@
         Dim db As New DBTools
         comm = New SqlClient.SqlCommand("SancionesSel")
         comm.CommandType = CommandType.StoredProcedure
+        comm.Parameters.AddWithValue("@pnIdLiga", 1)
         Dim dt = db.EjecutaCommandoTabla(comm, "DataTable1")
         db = Nothing
         comm = Nothing
@@ -106,7 +108,7 @@
 
     Friend Sub ObtieneInformacion()
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneTipoSancion " & IdTipoSancion
+        Conexion.Comando.CommandText = "ObtieneTipoSancion 1," & IdTipoSancion
         SR = Conexion.Comando.ExecuteReader
         Limpiar()
         If SR.HasRows = True Then
@@ -130,7 +132,7 @@
 
     Friend Sub CargaCombo(ByRef Combo As ComboBox, Optional ByVal AgregarTodos As Boolean = False)
         Dim SR As SqlClient.SqlDataReader
-        Conexion.Comando.CommandText = "ObtieneTiposDeSancion "
+        Conexion.Comando.CommandText = "ObtieneTiposDeSancion 1"
         SR = Conexion.Comando.ExecuteReader
         If SR.HasRows = True Then
             Ids.Clear()

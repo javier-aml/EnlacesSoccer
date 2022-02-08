@@ -8,7 +8,7 @@
 -- EXEC EstadisticasTorneoJornadaSel @pnIdLiga = 1, @pnIdTorneo = 2, @pnidJornada = 3
 -- =============================================
 ALTER PROCEDURE EstadisticasTorneoJornadaSel
-	@pnIdLiga	INT,
+	@pnIdLiga	INT=1,
 	@pnIdTorneo as int,
 	@pnidJornada as int 
 	

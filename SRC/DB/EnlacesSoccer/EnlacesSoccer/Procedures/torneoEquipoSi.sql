@@ -5,7 +5,7 @@
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE torneoEquipoSi
-	@pnIdLiga					INT,
+	@pnIdLiga					INT=1,
 	@nIdTorneo					TINYINT,
 	@nIdEquipo					TINYINT,
 	@nIdJornada					TINYINT,

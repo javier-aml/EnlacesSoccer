@@ -5,7 +5,7 @@
 -- Description:	<Description,,>
 -- =============================================
 ALTER PROCEDURE dbo.jornadaSi
-	@pnIdLiga				INT,
+	@pnIdLiga				INT=1,
 	@nIdTorneo				TINYINT,
 	@nIdJornada				TINYINT,
 	@nPorJugar				BIT,
