@@ -1,6 +1,6 @@
 
-ALTER PROCEDURE dbo.ConsultarLiga
-	@nIdLiga int=1
+ALTER PROCEDURE [dbo].[ConsultarLiga]
+	@pnIdLiga int
 AS
 BEGIN
 
@@ -17,11 +17,11 @@ BEGIN
 		  ,IdMunicipio
 		  ,case Activo when 1 then 'Activo' else 'Inactivo' END as Estado	  
 	FROM	Liga
-	WHERE IdLiga = @nIdLiga	
+	WHERE IdLiga = @pnIdLiga	
 	ORDER BY Activo Desc, IdPais, IdEstado, IdMunicipio, Nombre
 
 END
 GO
 
-execute dbo.ConsultarLiga @nIdLiga = 1
+execute dbo.ConsultarLiga @pnIdLiga = 1
 

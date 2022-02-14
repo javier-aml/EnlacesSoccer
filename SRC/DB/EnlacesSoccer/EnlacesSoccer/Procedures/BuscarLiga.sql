@@ -1,9 +1,9 @@
 
 ALTER PROCEDURE [dbo].[BuscarLiga]
-@sNombre as varchar(50),
-@nIdPais as tinyint = 0, --1 --México
-@nIdEstado as smallint = 0, --19 --Estado
-@nIdMunicipio as smallint = 0 --26 --Guadalupe
+@psNombre as varchar(50),
+@pnIdPais as tinyint = 0, --1 --México
+@pnIdEstado as smallint = 0, --19 --Estado
+@pnIdMunicipio as smallint = 0 --26 --Guadalupe
 AS
 BEGIN
 
@@ -26,14 +26,14 @@ BEGIN
    left join dbo.Pais Pai on (Lig.IdPais = Pai.IdPais)
    left join dbo.Estado Est on (Lig.IdPais = Est.IdPais AND Lig.IdEstado = Est.IdEstado)
    left join dbo.Municipio Mun on (Lig.IdPais = Mun.IdPais AND Lig.IdEstado = Mun.IdEstado AND Lig.IdMunicipio = Mun.IdMunicipio)
-   where Lig.Nombre like '%' + @sNombre + '%' 
-   and (Lig.IdPais = @nIdPais OR @nIdPais = 0) AND (Lig.IdEstado = @nIdEstado OR @nIdEstado = 0) AND (Lig.IdMunicipio = @nIdMunicipio OR @nIdMunicipio = 0)
+   where Lig.Nombre like '%' + @psNombre + '%' 
+   and (Lig.IdPais = @pnIdPais OR @pnIdPais = 0) AND (Lig.IdEstado = @pnIdEstado OR @pnIdEstado = 0) AND (Lig.IdMunicipio = @pnIdMunicipio OR @pnIdMunicipio = 0)
    order by Pai.Nombre, Est.Nombre, Mun.Nombre, Lig.Nombre
 END
 GO
 
 /*
 --EJEMPLO probando con País: México, Estado:Nuevo León y Municipio: Todos
-EXEC [dbo].[BuscarLiga] @sNombre = '', @nIdPais = 1, @nIdEstado = 19, @nIdMunicipio = 0
+EXEC [dbo].[BuscarLiga] @psNombre = '', @pnIdPais = 1, @pnIdEstado = 19, @pnIdMunicipio = 0
 GO
 */
